@@ -5,6 +5,15 @@
 <head>
 	<meta charset="utf-8">
 	<title>다음 지도 API</title>
+	<style>
+		/*
+		flex : 한 줄, 한 줄 나오게끔.
+		*/
+		.tour-infoWindow{
+			display: flex; 
+			flex-direction: column;
+		}
+	</style>
 </head>
 <body>
 	<div id="map" style="width:750px;height:350px;"></div>
@@ -45,7 +54,7 @@
 				var positions = []
 
 				for (let i=0; i<res.TourDestBaseInfo.length; i++) {
-					if (res.TourDestBaseInfo[i].addrJibun == null){
+					if (res.TourDestBaseInfo[i].addrRoad == null){
 						let dic = {
 							content: `
 							<div class="tour-infoWindow">
@@ -84,7 +93,7 @@
 
 					// 마커에 표시할 인포윈도우를 생성합니다 
 					var infowindow = new kakao.maps.InfoWindow({
-						content: positions[i].content // 인포윈도우에 표시할 내용
+						content: positions[i].content // 인포윈도우에 표시할 내용b nkj
 					});
 
 					// 마커에 mouseover 이벤트와 mouseout 이벤트를 등록합니다
