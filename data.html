@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var xhr = new XMLHttpRequest();
+        var url = 'http://apis.data.go.kr/6290000/tourdestbaseinfo/gettourdestbaseinfo'; /*URL*/
+        var queryParams = '?' + encodeURIComponent('serviceKey') + '='+'서비스키'; /*Service Key*/
+        queryParams += '&' + encodeURIComponent('numOfRows') + '=' + encodeURIComponent('2'); /**/
+        queryParams += '&' + encodeURIComponent('pageNo') + '=' + encodeURIComponent('1'); /**/
+        queryParams += '&' + encodeURIComponent('type') + '=' + encodeURIComponent('xml'); /**/
+        queryParams += '&' + encodeURIComponent('tourDestNm') + '=' + encodeURIComponent(''); /**/
+        xhr.open('GET', url + queryParams);
+        xhr.onreadystatechange = function () {
+            if (this.readyState == 4) {
+                alert('Status: '+this.status+'nHeaders: '+JSON.stringify(this.getAllResponseHeaders())+'nBody: '+this.responseText);
+            }
+        };
+
+        xhr.send('');
+
+    </script>
+</body>
+</html>

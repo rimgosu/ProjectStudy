@@ -1,0 +1,13 @@
+http://apis.data.go.kr/6290000/tourdestbaseinfo/gettourdestbaseinfo?serviceKey=4GV1hSVU49RUlLplfS2Ib20hTR3oIb1HvjFal1RbA5Jc5cq1q43DB0Aq2gS7InxKpvHOqqJz0KRRHoZhrXjAqQ%3D%3D&type=json&tourDestNm=공원&pageNo=1&numOfRows=20
+
+
+-json/xml 변경 가능
+-인코딩 인증키
+-numofrows=2 변경
+
+필요한 컬럼 :
+1. tourDestNm
+2. addrRoad or addrJibun
+3. lat
+4. lng
+5. mngAgcTel
