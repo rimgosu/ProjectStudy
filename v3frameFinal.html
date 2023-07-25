@@ -7,6 +7,13 @@
 
     <style>
 
+        html, body {
+            height: 100%;
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+        }
+
         ::selection {
             background-color: rgb(255, 247, 224);
         }
@@ -15,9 +22,8 @@
         }
 
         #whole {
-            display: flex; 
-            justify-content: center; 
-            align-items: center; 
+            display: grid;
+            place-items: center; 
             height: 100vh; 
             width: 100%;
         }
@@ -25,7 +31,7 @@
         #mainframe {
             width: 440px;
             /* chain of height */
-            height: 2357.390px; 
+            height: 1857.390px; 
             background-color: rgb(162, 162, 162);
             box-shadow: 10px 0px 20px -10px rgba(0,0,0,0.2), -10px 0px 20px -10px rgba(0,0,0,0.2); /* 그림자 수정 */
         }
@@ -48,7 +54,7 @@
         #screen-main {
             width: 440px;
             /* chain of height */
-            height: 1642.560px;
+            height: 1542.560px;
             position: relative;
             
             background-color: gray;
@@ -61,7 +67,7 @@
         #mainframeTop {
             width: 440px;
             /* chain of height */
-            height: 2293.380px;
+            height: 1800px;
         }
 
         #mainframeBottom {
@@ -72,7 +78,7 @@
 
         #footer {
             width: 380px;
-            height: 184px;
+            height: 210px;
 
             padding: 30px 30px calc(30px);
             background-color: rgb(245, 245, 245);
@@ -111,11 +117,11 @@
 
 
         .dumpblock {
-            padding-top: 16px;
-            padding-left: 26px;
-            padding-right: 26px;
-            width: 388px;
-            height: 145.790px;
+            padding-top: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+            width: 0px;
+            height: 0px;
             background-color: white;
         }
 
@@ -309,10 +315,6 @@
                 </div>
 
                 <div id="screen-main" style="background-color: white;">
-                
-                    <div class="dumpblock" style="margin-top: 400px; background-color: white;">
-                        <br>
-                    </div>
 
                     <div class="searchbar">
                         <div class="searchbar-box">
@@ -390,7 +392,7 @@
                     <h1>Ourfit</h1>
                     피트니스크루<br>
                     팀장 김대현: ysm691611@naver.com<br>
-                    변지협 오주현 류혜림 염다염<br>
+                    변지협 오주현 류혜림 염다영<br>
                     인공지능사관학교<br>
                     @all rights reserved
                 
