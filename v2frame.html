@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        ::selection {
+            background-color: rgb(255, 247, 224);
+        }
+        * {
+            margin: 0px;
+        }
+
+        #whole {
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            width: 100%;
+        }
+
+        #mainframe {
+            width: 440px;
+            /* chain of height */
+            height: 2357.390px; 
+            background-color: rgb(162, 162, 162);
+            box-shadow: 10px 0px 20px -10px rgba(0,0,0,0.2), -10px 0px 20px -10px rgba(0,0,0,0.2); /* 그림자 수정 */
+        }
+
+
+        #logo-top {
+            width: 440px;
+            height: 48px;
+            background-color: white;
+            z-index: 100;
+
+            position: sticky;
+            top: 0px;
+            display: block;
+
+            text-align: center;
+        }
+
+
+        #screen-main {
+            width: 440px;
+            /* chain of height */
+            height: 1642.560px;
+            position: relative;
+            
+            background-color: gray;
+            min-height: calc(100vh - 48px);
+
+            display: block;
+
+        }
+
+        #mainframeTop {
+            width: 440px;
+            /* chain of height */
+            height: 2293.380px;
+        }
+
+        #mainframeBottom {
+            width: 440px;
+            height: 65px;
+            border-top: 0.909px;
+        }
+
+        #footer {
+            width: 380px;
+            height: 184px;
+
+            padding: 30px 30px calc(30px);
+            background-color: rgb(245, 245, 245);
+            border-top: 4px solid rgb(214,214,214);
+        }
+
+        .navBar {
+            background-color: white;
+            position: sticky;
+            bottom: 0px;
+            height: 65px;
+            width: 100%;
+            z-index: 10;
+            border-top: 1px solid rgba(237, 237, 237, 0.725);
+        }
+
+        .navBar-ul {
+            padding: 0px;
+            height: 65px;
+            width: 440px;
+            background-color: white;
+        
+        }
+
+        .navBar-li {
+            float: left;
+            
+            width: 87.997px;
+            height: 65px;
+
+            list-style: none;
+
+            text-align: center;
+            
+        }
+
+
+        .dumpblock {
+            padding-top: 16px;
+            padding-left: 26px;
+            padding-right: 26px;
+            width: 388px;
+            height: 145.790px;
+            background-color: white;
+        }
+
+        .searchbar {
+            padding-top: 16px;
+            padding-left: 26px;
+            padding-right: 26px;
+            width: 388px;
+            height: 45.790px;
+            background-color: gray;
+        }
+
+        .searchbar-box {
+            width: 372.216px;
+            height: 30px;
+            padding: 7px 7px 7px 7px;
+            border: 0.9px 0.9px 0.9px 0.9px;
+            background-color: aqua;
+
+        }
+
+        .searchbar-box-window {
+            width: 342.216px;
+            height: 30px;
+            background-color: black;
+            float: left;
+        }
+        
+        .searchbar-box-button {
+            width: 30px;
+            height: 30px;
+            background-color: gray;
+            float: left;
+        }
+
+
+
+
+        .slick-list {
+            width: 388.011px;
+            height: 150.881px;
+            background-color: bisque;
+            padding-left: 26px;
+            padding-right: 26px;
+            padding-top: 16px;
+            padding-bottom: 32px;
+        }
+
+        .slick-list-album {
+            width: 388.011px;
+            height: 150.881px;
+            background-color: gray;
+        }
+
+        
+        .select-category {
+            width: 388.011px;
+            height: 27.997px;
+            padding-left: 26px;
+            padding-right: 26px;
+            padding-bottom: 16px;
+            background-color: red;
+        }
+
+
+        .category-box {
+            width: 440px;
+            height: 190px; 
+            background-color: antiquewhite;
+        }
+
+        .category-box-ol {
+            padding-left: 26px;
+            padding-right: 26px;
+            width: 388px;
+            height: 190px;
+            background-color: lightblue;
+            text-align: center;
+            list-style-type: none;
+        }
+
+        .categories {
+            width: 90.994px;
+            height: 85.994px;
+            float: left;
+            border: 1px solid black;
+        }
+
+
+        .mapbox {
+            width: 388.011px;
+            height: 436px;
+            padding: 26px 26px 26px 26px;
+            background-color: aquamarine;
+        }
+
+        .map {
+            width: 388.011px;
+            height: 436px;
+            background-color: black;
+        }
+
+
+        .communityframe {
+            width: 388.011px;
+            height: 435.966px;
+            padding: 26px 26px 26px 26px;
+            background-color: blueviolet;
+        }
+
+        .communitybox {
+            width: 388.011px;
+            height: 435.966px;
+            background-color: yellowgreen;
+        }
+
+        .communitybox-intro {
+            width: 388px;
+            height: 28px;
+            background-color: hotpink;
+        }
+
+        .see-all-arrow {
+            width: 24px;
+            height: 24px;
+            background-color: blue;
+            float: right;
+        }
+
+        .see-all {
+            width: 80px;
+            height: 24px;
+            background-color: white;
+            float: right;
+        }
+
+        .communitybox-contents {
+            width: 388px;
+            height: 392px;
+            background-color: aqua;
+            padding: 0px;
+            list-style-type: none;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 24px 16px;
+        }
+
+        .communitybox-content {
+            width: 186px;
+            height: 184px;
+            gap: 9px;
+            cursor: pointer;
+            background-color: black;
+        }
+        
+        .communitybox-content-img {
+            width: 100%;
+            border-radius: 8xpx;
+            height: 100px;
+            object-fit: cover;
+            display: block;
+            
+
+            overflow-clip-margin: content-box;
+            overflow: clip;
+        }
+
+        .communitybox-content-title {
+            width: 186px;
+            height: 20px;
+            background-color: bisque;
+        }
+
+        .communitybox-content-detail {
+            width: 186px;
+            height: 48px;
+            background-color: gray;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="whole">
+        <div id="mainframe">
+            
+            <div id="mainframeTop">
+                <div id="logo-top">
+                    <img src="logo.png" alt="" style="width: 200px; margin-top: 4px;">
+                    <!-- <h1>Our fit</h1> -->
+
+                </div>
+
+                <div id="screen-main" style="background-color: white;">
+                
+                    <div class="dumpblock" style="margin-top: 400px; background-color: white;">
+                        <br>
+                    </div>
+
+                    <div class="searchbar">
+                        <div class="searchbar-box">
+                            <form action="" class="searchbar-box-window"></form>
+                            <div class="searchbar-box-button"></div>
+                        </div>
+                    </div>
+
+                    <div class="slick-list">
+                        <div class="slick-list-album"></div>
+                    </div>
+
+                    <div class="select-category">
+                        <h1 style="width: 388px; height: 28px; font-size: 20px;">관심있는 운동을 선택해보세요.</h1>
+
+                    </div>
+
+                    <div class="category-box">
+
+                        <nav style="width: 440px; height: 368px;">
+                            <ol class="category-box-ol">
+                                <li class="categories">헬스장</li>
+                                <li class="categories">수영</li>
+                                <li class="categories">필라테스</li>
+                                <li class="categories">크로스핏</li>
+                                <li class="categories">베드민턴</li>
+                                <li class="categories">클라이밍</li>
+                                <li class="categories">무도장</li>
+                                <li class="categories">스쿼시</li>
+
+                            </ol>
+
+                        </nav>
+
+                    </div>
+
+
+                    <div class="mapbox">
+                        <div class="map"></div>
+                    </div>
+
+                    
+                    <div class="communityframe">
+                        <div class="communitybox">
+                            <div class="communitybox-intro">
+                                
+                                <h2 style="float: left;">커뮤니티</h2>
+                                <div class="see-all-arrow">
+
+                                </div>
+                                <div class="see-all">
+                                    <a href="">전체보기</a>
+                                </div>
+                                
+                            </div>
+                            <ul class="communitybox-contents">
+                                <li class="communitybox-content">
+                                    <img src="testimg.png" alt="" class="communitybox-content-img">
+                                    <p class="communitybox-content-title">헬스장 추천</p>
+                                    <h3 class="communitybox-content-detail">지역 헬스장 추천 받아가세요</h3>
+                                </li>
+                                <li class="communitybox-content"></li>
+                                <li class="communitybox-content"></li>
+                                <li class="communitybox-content"></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                
+                </div>
+
+
+                <div id="footer">
+                    <h1>Ourfit</h1>
+                    피트니스크루<br>
+                    팀장 김대현: ysm691611@naver.com<br>
+                    변지협 오주현 류혜림 염다염<br>
+                    인공지능사관학교<br>
+                    @all rights reserved
+                
+                </div>
+
+            </div>
+            <div id="mainframeBottom" class="navBar">
+                <ul class="navBar-ul">
+
+                    <li selected class="navBar-li">홈</li>
+                    <li class="navBar-li">지도</li>
+                    <li class="navBar-li">커뮤니티</li>
+                    <li class="navBar-li">컬럼</li>
+                    <li class="navBar-li">OCR</li>
+
+                </ul>
+
+            </div>
+
+
+        </div>
+    </div>
+</body>
+</html>
