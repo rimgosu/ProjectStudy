@@ -7,24 +7,24 @@
 
     <style>
       #main {
-        z-index: 0;  /* choose a number high enough to bring the element to the front */
-        position: relative;  /* z-index only works on positioned elements */
+        z-index: 0;  
+        position: relative;  
       }
       #main-navbar, #header {
-        z-index: 1; /* choose a number higher than #main's z-index to bring the elements to the front */
+        z-index: 1; 
       }
     </style>
     
-    <script src="../js/jquery-3.7.0.js"></script>
+    <script src="./js/jquery-3.7.0.js"></script> <!-- 올바른 jquery 경로 입력-->
     <script>
     $(function(){
       $("#whole").load("mainframe.html", function() {
         $('#main').append(`
         
-        여기에 div를 추가하시오
+        여기에 컨텐츠를 추가하시오
         <div style="background-color:red; width: 200px; height: 200px;"><div>
 
-        `);
+        `); /* 이 안에 컨텐츠 추가 */
       }); 
     });
 
