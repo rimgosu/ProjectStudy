@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>자바스크립트 & 제이쿼리 응용</title>
+
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+
+        <h1 class="logo">
+            하트여왕 크로켓경기
+        </h1>
+
+        <nav>
+            <ul>
+                <li><a href="#intro">크로켓</a></li>
+                <li><a href="#team">선수</a></li>
+                <li><a href="#photo">사진</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <div id="slider">
+
+        <ul class="slides">
+            <li class="slide"><img src="img/image1.jpg" alt=""></li>
+            <li class="slide"><img src="img/image2.jpg" alt=""></li>
+            <li class="slide"><img src="img/image3.jpg" alt=""></li>
+            <li class="slide"><img src="img/image4.jpg" alt=""></li>
+            <li class="slide"><img src="img/image5.jpg" alt=""></li>
+            <li class="slide"><img src="img/image1.jpg" alt=""></li>
+        </ul>
+
+    </div>
+
+
+    <section id="intro">
+
+        <div class="title">
+            <h2>크로켓</h2>
+            <p>잔디가 깔린 코트에서 나무망치로 볼을 때려 코트 안에 있는 후프(작은 문)를 통과시켜 타임 또는 득점을 겨룬다. 보통 2~4명으로 번갈아 타구하면서 진행한다. 골프의 그린 상에서 행하는 퍼트와 흡사한 경기이다. 여기에서는 영국에서 행하여 지고 있는 경기방법에 따라 해설하고 있다. </p>
+        </div>
+
+
+        <div class="tabs">
+            <ul class="tabs-list">
+                <li class="active"><a href="#tab1">소개</a></li>
+                <li ><a href="#tab2">승패</a></li>
+                <li ><a href="#tab3">아웃</a></li>
+            </ul>
+
+            <div id="tab1" class="tab active">
+                <h3>소개</h3>
+                <p>
+                    11명으로 구성된 2개조의 팀이 야구 경기와 같이 공격측과 수비측으로 나뉘어 볼을 타격하여 득점을 겨루는 경기로서 다음의 요령으로 행한다.
+                    ①필드의 중앙에 22야드(약20m)의 간격으로 2개의 위킷이 있으며, 공격측은 각 위킷에 배트를 가지고 1명씩 위치한다. 1명은 타자이고 다른 1명은 주자가 되는데 페어의 한 쪽이 아웃이 되면 타자가 되어 반대측의 위킷에서 볼을 친다.
+                    ②수비측의 볼러(투수)는 배트맨의 바로 앞에서 바운드할 듯이 볼을 던지지만 일반적으로 말하는 드로우가 아니라 팔을 완전히 뻗은 채로 최상위에서 밀어내듯이 볼을 던진다.
+                    ③배트맨이 볼을 치면, 배트맨과 반대의 위킷에 있는 주자도 동시에 달리기 시작하여 도중에서 엇갈려 각각 반대쪽의 위킷에 배트를 터치해서 되풀이하고, 볼이 위킷에 되돌아 오기 전에 이것을 몇 번이고 반복해서 득점을 올린다(반대쪽 위킷에 도착하면1점). 시합은 2이닝으로 끝나지만, 공격측이 10명 아웃이 되면 공수를 교대한다. 1명이 수백점을 얻는 수도 있고, 큰 시합에서는 5일, 작은 시합에서도 하루가 걸리는 장시간 게임이다.
+                </p>
+            </div>
+            <div id="tab2" class="tab">
+                <h3>승패</h3>
+                <p>
+                    게임이 끝나고 득점이 많은 팀이 승자가 되지만, 득점은 다음과 같은 경우에 얻을 수 있다.
+                    ①타구한 볼이 위킷으로 되돌아오는 사이에 공격측의 2명이 서로 엇갈려 반대쪽 위킷에 배트를 터치하면 1점.
+                    ②타구한 볼이 노우 바운드로 필드의 경계선을 넘어가면 6점.
+                    ③바운드, 또는 땅볼로 경계선을 넘어가면 4점. ②③의 경우, 배트맨은 원위치로 되돌아오고, 경계선을 넘어간 득점만이 기록된다.
+                    ④볼러(투수)가 배트맨이 닿지 못할 정도로 높은 곳에 투구하거나 또는 위킷에서 벗어난 방향에 투구한 경우는 1점.
+                    ⑤볼이 배트맨의 손 이외의 몸에 닿고, 그것이 배트맨의 고의가 아닌 경우는 1점.
+                </p>
+            </div>
+            <div id="tab3" class="tab">
+                <h3>아웃</h3>
+                <p>
+                    배트맨이 실격되는 것을 말하며 다음 경우에 아웃이 된다. ① 배트맨이 볼을 치지 못하고 볼이 위킷에 맞아 횡목을 떨어뜨린 경우. ② 타구가 지상에 떨어지기 전에 포구된 경우 ③타구가 되돌려 지고 주자가 위킷에 도착하기 전에 볼로 위킷의 횡목을 떨어뜨린 경우. ④ 배트맨이 볼에 손을 대거나 두 번 연거푸 치거나 수비 선수를 방해한 경우. ⑤ 배트맨이 타격 중 뛰어나갈 때 배트나 몸으로 횡목을 떨어뜨린 경우. ⑥ 타자가 목적도 없이 위치를 벗어나 위킷 키퍼가 횡목을 떨어뜨린 경우.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <div class="clearfix"></div>
+
+
+    <section id="team">
+
+        <div class="title">
+            <h2>선수</h2>
+            <p>2018 엘리스 하트여왕 크로켓경기의 출전선수를 소개합니다.</p>
+        </div>
+
+        <div class="row">
+            <div class="team-intro">
+                <img src="img/team1.jpg">
+                <h3>도도새</h3>
+                <p>
+                    코커스 경주를 하는 것을 앨리스에게 가르쳐준다. 이후 앨리스가 자신의 애완 고양이인 다이나를 언급하자 다른 동물들과 함께 도망친다.
+                </p>
+            </div>
+            <div class="team-intro">
+                <img src="img/team2.jpg">
+                <h3>카드병정</h3>
+                <p>
+                    하트의 여왕과 왕을 따르는 병사들. 말 그대로 트럼프 병사들로, 흰 장미를 붉게 칠하는 모습으로 등장했다. 여왕의 "목을 베라"는 말에 목이 날아갈 불쌍한 팔자였지만 앨리스가 찻주전자에 넣어서 구조해준다
+                </p>
+            </div>
+            <div class="team-intro">
+                <img src="img/team3.jpg">
+                <h3>채셔캣</h3>
+                <p>
+                    나타났다가 사라지고 다시 다른 장소에 나타나는 일종의 순간이동을 할 수 있으며, 몸 전체가 왔다갔다하는 것뿐 아니라 한 장소에 몸의 일부만 나타나게 하는 것도 가능한 걸로 보인다.
+                </p>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <section id="photo">
+
+        <div class="title">
+            <h2>사진</h2>
+            <p>
+                2018 엘리스 하트여왕 크로켓경기의 사진을 공개합니다.
+            </p>
+        </div>
+
+        <div class="slider">
+
+            <div class="slide active"></div>
+            <div class="slide"></div>
+            <div class="slide"></div>
+
+        </div>
+
+        <p class="left-arrow"></p>
+        <p class="right-arrow"></p>
+
+    </section>
+
+
+
+    <footer id="footer">
+
+        <div class="copyright">
+            <p>Copyright © 2016-2018 elice. All rights reserved.</p>
+        </div>
+
+        <div class="address">
+            <p>대전광역시 유성구 문지로 193 KAIST 문지캠퍼스 진리관 T326호</p>
+        </div>
+
+    </footer>
+
+
+</div>
+
+<script src="jquery-3.5.1.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>

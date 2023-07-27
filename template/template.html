@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+      #main {
+        z-index: 0;  /* choose a number high enough to bring the element to the front */
+        position: relative;  /* z-index only works on positioned elements */
+      }
+      #main-navbar, #header {
+        z-index: 1; /* choose a number higher than #main's z-index to bring the elements to the front */
+      }
+    </style>
+    
+    <script src="../js/jquery-3.7.0.js"></script>
+    <script>
+    $(function(){
+      $("#whole").load("mainframe.html", function() {
+        $('#main').append(`
+        
+        여기에 div를 추가하시오
+        <div style="background-color:red; width: 200px; height: 200px;"><div>
+
+        `);
+      }); 
+    });
+
+    </script>
+</head>
+<body>
+
+  <div id="whole"></div>
+
+</body>
+</html>

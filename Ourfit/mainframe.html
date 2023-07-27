@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="mainframe.css">
+
+    <style >
+    /* 
+        html,body
+        └ # whole
+            └ # mainframe
+                ├ # main-content
+                │   ┝ # header
+                │   ├ # main
+                │   │   ┝ . searchbar
+                │   │   │   └ . searchbar-box
+                │   │   │       ├ . searchbar-box-window
+                │   │   │       └ . searchbar-box-button
+                │   │   ├ . slick
+                │   │   │   └ . slick-album
+                │   │   ├ . category-info
+                │   │   ├ . category-box
+                │   │   │   └ . category-box-ol
+                │   │   │       ├ category-item
+                │   │   │       ├ category-item
+                │   │   │       ├ category-item
+                │   │   │       ├ category-item
+                │   │   │       ├ category-item
+                │   │   │       ├ category-item
+                │   │   │       ├ category-item
+                │   │   │       └ category-item
+                │   │   ├ . mapbox
+                │   │   │   └ . map
+                │   │   └ . communityframe
+                │   │       └ . communitybox
+                │   │           ├ . communitybox-intro
+                │   │           │   ├ . seeall-arrow
+                │   │           │   └ . seeall
+                │   │           └ . communitybox-contents
+                │   │               ├ . communitybox-content
+                │   │               ├ . communitybox-content
+                │   │               ├ . communitybox-content
+                │   │               └ . communitybox-content
+                │   │                   └ . communitybox-content-img
+                │   └ # footer 
+                └ # main-navbar
+                    └ . navbar-ul
+                        ├ . navbar-li
+                        ├ . navbar-li
+                        ├ . navbar-li
+                        ├ . navbar-li
+                        └ . navbar-li
+    */
+
+    </style>
+</head>
+<body>
+
+    <div id="whole">
+        <div id="mainframe">
+            
+            <div id="main-content">
+                <div id="header">
+                    <img src="logo.png" alt="" style="width: 200px; margin-top: 4px;">
+                    <!-- <h1>Our fit</h1> -->
+
+                </div>
+
+                <div id="main" style="background-color: white;"></div>
+
+
+                <div id="footer">
+                    <h1>Ourfit</h1>
+                    피트니스크루<br>
+                    팀장 김대현: ysm691611@naver.com<br>
+                    변지협 오주현 류혜림 염다영<br>
+                    인공지능사관학교<br>
+                    @all rights reserved
+                
+                </div>
+
+            </div>
+            <div id="main-navbar" class="navbar">
+                <ul class="navbar-ul">
+
+                    <li class="navbar-li active"><a href="#">홈</a></li>
+                    <li class="navbar-li"><a href="#">지도</a></li>
+                    <li class="navbar-li"><a href="#">커뮤니티</a></li>
+                    <li class="navbar-li"><a href="#">컬럼</a></li>
+                    <li class="navbar-li"><a href="#">ocr리뷰</a></li>
+
+                </ul>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <script>
+        // 모든 네비게이션 바 아이템을 선택합니다.
+        var navItems = document.querySelectorAll('.navbar-ul li');
+    
+        // 각 아이템에 클릭 이벤트 리스너를 추가합니다.
+        navItems.forEach(function(item) {
+            item.addEventListener('click', function(event) {
+                // 모든 아이템에서 'active' 클래스를 제거합니다.
+                navItems.forEach(function(otherItem) {
+                    otherItem.classList.remove('active');
+                });
+    
+                // 클릭한 아이템에 'active' 클래스를 추가합니다.
+                item.classList.add('active');
+            });
+        });
+    </script>
+    
+</body>
+</html>

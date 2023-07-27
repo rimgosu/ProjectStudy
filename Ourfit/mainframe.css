@@ -1,0 +1,114 @@
+* {
+    margin: 0px;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+::selection {
+    background-color: rgb(255, 247, 224);
+}
+
+#whole {
+    display: grid;
+    place-items: center; 
+    height: 100vh; 
+    width: 100%;
+}
+
+
+#mainframe {
+    width: 440px;
+    /* chain of height */
+    height: auto; 
+    background-color: rgb(162, 162, 162);
+    box-shadow: 10px 0px 20px -10px rgba(0,0,0,0.2), -10px 0px 20px -10px rgba(0,0,0,0.2); /* 그림자 수정 */
+}
+
+
+#header {
+    width: 440px;
+    height: 48px;
+    background-color: white;
+    z-index: 100;
+
+    position: sticky;
+    top: 0px;
+    display: block;
+
+    text-align: center;
+}
+
+#main {
+    width: 440px;
+    /* chain of height */
+    height: auto;
+    position: relative;
+    
+    background-color: gray;
+    min-height: calc(100vh - 48px);
+
+    display: block;
+
+}
+
+#main-content {
+    width: 440px;
+    /* chain of height */
+    height: auto;
+}
+
+#main-navbar {
+    width: 440px;
+    height: 65px;
+    border-top: 0.909px;
+}
+
+#footer {
+    width: 380px;
+    height: 210px;
+
+    padding: 30px 30px calc(30px);
+    background-color: rgb(245, 245, 245);
+    border-top: 4px solid rgb(214,214,214);
+}
+
+
+.navbar {
+    background-color: white;
+    position: sticky;
+    bottom: 0px;
+    height: 65px;
+    width: 100%;
+    z-index: 10;
+    border-top: 1px solid rgba(237, 237, 237, 0.725);
+}
+
+.navbar-ul {
+    padding: 0px;
+    height: 65px;
+    width: 440px;
+    background-color: white;
+
+}
+
+.navbar-li {
+    float: left;
+    
+    width: 87.997px;
+    height: 65px;
+
+    list-style: none;
+
+    text-align: center;
+    
+}
+
+.active{
+    background-color: gray !important;
+}
+

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 탬플릿 파일 불러오기
+        fetch('template.html')
+          .then(response => response.text())
+          .then(data => {
+            // 탬플릿의 #content에 내용 채우기
+            const content = document.createElement('div');
+            content.innerHTML = '<h1>페이지 2</h1><p>페이지 2의 내용</p>';
+            const template = new DOMParser().parseFromString(data, 'text/html');
+            template.getElementById('content').appendChild(content);
+      
+            // 완성된 페이지를 현재 페이지에 추가
+            document.body.appendChild(template.body.firstChild);
+          });
+      </script>
+      
+</body>
+</html>

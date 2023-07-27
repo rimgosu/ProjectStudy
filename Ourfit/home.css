@@ -1,0 +1,174 @@
+
+.searchbar {
+    padding-top: 16px;
+    padding-left: 26px;
+    padding-right: 26px;
+    width: 388px;
+    height: 45.790px;
+    background-color: gray;
+}
+
+.searchbar-box {
+    width: 372.216px;
+    height: 30px;
+    padding: 7px 7px 7px 7px;
+    border: 0.9px 0.9px 0.9px 0.9px;
+    background-color: aqua;
+
+}
+
+.searchbar-box-window {
+    width: 342.216px;
+    height: 30px;
+    background-color: black;
+    float: left;
+}
+
+.searchbar-box-button {
+    width: 30px;
+    height: 30px;
+    background-color: gray;
+    float: left;
+}
+
+
+.slick {
+    width: 388.011px;
+    height: 150.881px;
+    background-color: bisque;
+    padding-left: 26px;
+    padding-right: 26px;
+    padding-top: 16px;
+    padding-bottom: 32px;
+}
+
+.slick-album {
+    width: 388.011px;
+    height: 150.881px;
+    background-color: gray;
+}
+
+
+.category-info {
+    width: 388.011px;
+    height: 27.997px;
+    padding-left: 26px;
+    padding-right: 26px;
+    padding-bottom: 16px;
+    background-color: red;
+}
+
+
+.category-box {
+    width: 440px;
+    height: 190px; 
+    background-color: antiquewhite;
+}
+
+.category-box-ol {
+    padding-left: 26px;
+    padding-right: 26px;
+    width: 388px;
+    height: 190px;
+    background-color: lightblue;
+    text-align: center;
+    list-style-type: none;
+}
+
+.category-item {
+    width: 90.994px;
+    height: 85.994px;
+    float: left;
+    border: 1px solid black;
+}
+
+
+.mapbox {
+    width: 388.011px;
+    height: 436px;
+    padding: 26px 26px 26px 26px;
+    background-color: aquamarine;
+}
+
+.map {
+    width: 388.011px;
+    height: 436px;
+    background-color: black;
+}
+
+
+.communityframe {
+    width: 388.011px;
+    height: 435.966px;
+    padding: 26px 26px 26px 26px;
+    background-color: blueviolet;
+}
+
+.communitybox {
+    width: 388.011px;
+    height: 435.966px;
+    background-color: yellowgreen;
+}
+
+.communitybox-intro {
+    width: 388px;
+    height: 28px;
+    background-color: hotpink;
+}
+
+.seeall-arrow {
+    width: 24px;
+    height: 24px;
+    background-color: blue;
+    float: right;
+}
+
+.seeall {
+    width: 80px;
+    height: 24px;
+    background-color: white;
+    float: right;
+}
+
+.communitybox-contents {
+    width: 388px;
+    height: 392px;
+    background-color: aqua;
+    padding: 0px;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px 16px;
+}
+
+.communitybox-content {
+    width: 186px;
+    height: 184px;
+    gap: 9px;
+    cursor: pointer;
+    background-color: black;
+}
+
+.communitybox-content-img {
+    width: 100%;
+    border-radius: 8xpx;
+    height: 100px;
+    object-fit: cover;
+    display: block;
+    
+
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.communitybox-content-title {
+    width: 186px;
+    height: 20px;
+    background-color: bisque;
+}
+
+.communitybox-content-detail {
+    width: 186px;
+    height: 48px;
+    background-color: gray;
+}
