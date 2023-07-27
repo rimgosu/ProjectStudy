@@ -6,6 +6,55 @@
     <title>Document</title>
 
     <style>
+    /* 
+        html,body
+        └ # whole
+            └ # mainframe
+                ├ # main-content
+                │   ┝ # header
+                │   ├ # main
+                │   │   ┝ . searchbar
+                │   │   │   └ . searchbar-box
+                │   │   │       ├ . searchbar-box-window
+                │   │   │       └ . searchbar-box-button
+                │   │   ├ . slick
+                │   │   │   └ . slick-album
+                │   │   ├ . category-info
+                │   │   ├ . category-box
+                │   │   │   └ . category-box-ol
+                │   │   │       ├ category-item
+                │   │   │       ├ category-item
+                │   │   │       ├ category-item
+                │   │   │       ├ category-item
+                │   │   │       ├ category-item
+                │   │   │       ├ category-item
+                │   │   │       ├ category-item
+                │   │   │       └ category-item
+                │   │   ├ . mapbox
+                │   │   │   └ . map
+                │   │   └ . communityframe
+                │   │       └ . communitybox
+                │   │           ├ . communitybox-intro
+                │   │           │   ├ . seeall-arrow
+                │   │           │   └ . seeall
+                │   │           └ . communitybox-contents
+                │   │               ├ . communitybox-content
+                │   │               ├ . communitybox-content
+                │   │               ├ . communitybox-content
+                │   │               └ . communitybox-content
+                │   │                   └ . communitybox-content-img
+                │   └ # footer 
+                └ # main-navbar
+                    └ . navbar-ul
+                        ├ . navbar-li
+                        ├ . navbar-li
+                        ├ . navbar-li
+                        ├ . navbar-li
+                        └ . navbar-li
+    */
+        * {
+            margin: 0px;
+        }
 
         html, body {
             height: 100%;
@@ -17,9 +66,6 @@
         ::selection {
             background-color: rgb(255, 247, 224);
         }
-        * {
-            margin: 0px;
-        }
 
         #whole {
             display: grid;
@@ -27,6 +73,7 @@
             height: 100vh; 
             width: 100%;
         }
+
 
         #mainframe {
             width: 440px;
@@ -37,7 +84,7 @@
         }
 
 
-        #logo-top {
+        #header {
             width: 440px;
             height: 48px;
             background-color: white;
@@ -50,8 +97,7 @@
             text-align: center;
         }
 
-
-        #screen-main {
+        #main {
             width: 440px;
             /* chain of height */
             height: 1542.560px;
@@ -64,13 +110,13 @@
 
         }
 
-        #mainframeTop {
+        #main-content {
             width: 440px;
             /* chain of height */
             height: 1800px;
         }
 
-        #mainframeBottom {
+        #main-navbar {
             width: 440px;
             height: 65px;
             border-top: 0.909px;
@@ -85,7 +131,8 @@
             border-top: 4px solid rgb(214,214,214);
         }
 
-        .navBar {
+        
+        .navbar {
             background-color: white;
             position: sticky;
             bottom: 0px;
@@ -95,7 +142,7 @@
             border-top: 1px solid rgba(237, 237, 237, 0.725);
         }
 
-        .navBar-ul {
+        .navbar-ul {
             padding: 0px;
             height: 65px;
             width: 440px;
@@ -103,7 +150,7 @@
         
         }
 
-        .navBar-li {
+        .navbar-li {
             float: left;
             
             width: 87.997px;
@@ -115,15 +162,6 @@
             
         }
 
-
-        .dumpblock {
-            padding-top: 0px;
-            padding-left: 0px;
-            padding-right: 0px;
-            width: 0px;
-            height: 0px;
-            background-color: white;
-        }
 
         .searchbar {
             padding-top: 16px;
@@ -156,11 +194,9 @@
             background-color: gray;
             float: left;
         }
+        
 
-
-
-
-        .slick-list {
+        .slick {
             width: 388.011px;
             height: 150.881px;
             background-color: bisque;
@@ -170,14 +206,14 @@
             padding-bottom: 32px;
         }
 
-        .slick-list-album {
+        .slick-album {
             width: 388.011px;
             height: 150.881px;
             background-color: gray;
         }
 
         
-        .select-category {
+        .category-info {
             width: 388.011px;
             height: 27.997px;
             padding-left: 26px;
@@ -203,7 +239,7 @@
             list-style-type: none;
         }
 
-        .categories {
+        .category-item {
             width: 90.994px;
             height: 85.994px;
             float: left;
@@ -244,14 +280,14 @@
             background-color: hotpink;
         }
 
-        .see-all-arrow {
+        .seeall-arrow {
             width: 24px;
             height: 24px;
             background-color: blue;
             float: right;
         }
 
-        .see-all {
+        .seeall {
             width: 80px;
             height: 24px;
             background-color: white;
@@ -307,14 +343,14 @@
     <div id="whole">
         <div id="mainframe">
             
-            <div id="mainframeTop">
-                <div id="logo-top">
+            <div id="main-content">
+                <div id="header">
                     <img src="logo.png" alt="" style="width: 200px; margin-top: 4px;">
                     <!-- <h1>Our fit</h1> -->
 
                 </div>
 
-                <div id="screen-main" style="background-color: white;">
+                <div id="main" style="background-color: white;">
 
                     <div class="searchbar">
                         <div class="searchbar-box">
@@ -323,27 +359,27 @@
                         </div>
                     </div>
 
-                    <div class="slick-list">
-                        <div class="slick-list-album"></div>
+                    <div class="slick">
+                        <div class="slick-album"></div>
                     </div>
 
-                    <div class="select-category">
+                    <div class="category-info">
                         <h1 style="width: 388px; height: 28px; font-size: 20px;">관심있는 운동을 선택해보세요.</h1>
 
                     </div>
 
                     <div class="category-box">
 
-                        <nav style="width: 440px; height: 368px;">
+                        <nav style="width: 440px; height: 190px;">
                             <ol class="category-box-ol">
-                                <li class="categories">헬스장</li>
-                                <li class="categories">수영</li>
-                                <li class="categories">필라테스</li>
-                                <li class="categories">크로스핏</li>
-                                <li class="categories">베드민턴</li>
-                                <li class="categories">클라이밍</li>
-                                <li class="categories">무도장</li>
-                                <li class="categories">스쿼시</li>
+                                <li class="category-item">헬스장</li>
+                                <li class="category-item">수영</li>
+                                <li class="category-item">필라테스</li>
+                                <li class="category-item">크로스핏</li>
+                                <li class="category-item">베드민턴</li>
+                                <li class="category-item">클라이밍</li>
+                                <li class="category-item">무도장</li>
+                                <li class="category-item">스쿼시</li>
 
                             </ol>
 
@@ -362,10 +398,10 @@
                             <div class="communitybox-intro">
                                 
                                 <h2 style="float: left;">커뮤니티</h2>
-                                <div class="see-all-arrow">
+                                <div class="seeall-arrow">
 
                                 </div>
-                                <div class="see-all">
+                                <div class="seeall">
                                     <a href="">전체보기</a>
                                 </div>
                                 
@@ -399,14 +435,14 @@
                 </div>
 
             </div>
-            <div id="mainframeBottom" class="navBar">
-                <ul class="navBar-ul">
+            <div id="main-navbar" class="navbar">
+                <ul class="navbar-ul">
 
-                    <li selected class="navBar-li">홈</li>
-                    <li class="navBar-li">지도</li>
-                    <li class="navBar-li">커뮤니티</li>
-                    <li class="navBar-li">컬럼</li>
-                    <li class="navBar-li">OCR</li>
+                    <li selected class="navbar-li">홈</li>
+                    <li class="navbar-li">지도</li>
+                    <li class="navbar-li">커뮤니티</li>
+                    <li class="navbar-li">컬럼</li>
+                    <li class="navbar-li">OCR</li>
 
                 </ul>
 
