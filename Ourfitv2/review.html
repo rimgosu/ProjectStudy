@@ -4,54 +4,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./Assets/css/review.css">
-    <style>
-      #main {
-        z-index: 0;  /* choose a number high enough to bring the element to the front */
-        position: relative;  /* z-index only works on positioned elements */
-      }
-      #main-navbar, #header {
-        z-index: 1; /* choose a number higher than #main's z-index to bring the elements to the front */
-      }
-    </style>
-    
-    <script src="Assets/js/jquery-3.7.0.js"></script>
-    <script>
-    $(function(){
-      $("#whole").load("mainframe.html", function() {
-        $('#main').append(`
+
+    <link rel="stylesheet" href="Assets/css/mainframe.css">
+    <!--
+
+html,body
+        └ # whole
+            └ # mainframe
+                ├ # main-content
+                │   ┝ # header
+                │   ├ # main
+                │   │   ┝ . searchbar
+                │   │   │   └ . searchbar-box
+                │   │   │       ├ . searchbar-box-window
+                │   │   │       └ . searchbar-box-button
+                │   │   ├ . slick
+                │   │   │   └ . slick-album
+                │   │   ├ . category-info
+                │   │   ├ . category-box
+                │   │   │   └ . category-box-ol
+                │   │   │       ├ category-item
+                │   │   │       ├ category-item
+                │   │   │       ├ category-item
+                │   │   │       ├ category-item
+                │   │   │       ├ category-item
+                │   │   │       ├ category-item
+                │   │   │       ├ category-item
+                │   │   │       └ category-item
+                │   │   ├ . mapbox
+                │   │   │   └ . map
+                │   │   └ . communityframe
+                │   │       └ . communitybox
+                │   │           ├ . communitybox-intro
+                │   │           │   ├ . seeall-arrow
+                │   │           │   └ . seeall
+                │   │           └ . communitybox-contents
+                │   │               ├ . communitybox-content
+                │   │               ├ . communitybox-content
+                │   │               ├ . communitybox-content
+                │   │               └ . communitybox-content
+                │   │                   └ . communitybox-content-img
+                │   └ # footer 
+                └ # main-navbar
+                    └ . navbar-ul
+                        ├ . navbar-li
+                        ├ . navbar-li
+                        ├ . navbar-li
+                        ├ . navbar-li
+                        └ . navbar-li
+
+    -->
         
-        여기에 div를 추가하시오
-        <div style="background-color:blue; width: 200px; height: 200px;"><div>
-
-        `);
-      }); 
-    });
-
-    </script>
 </head>
 <body>
 
-  <div id="whole"></div>
-  <script>
-    // 먼저 navbar-ul에 속한 모든 navbar-li 요소를 가져옵니다.
-    var navItems = document.querySelectorAll('.navbar-ul .navbar-li');
+    <div id="whole">
+        <div id="mainframe">
+            
+            <div id="main-content">
+                <div id="header">
+                    <img src="Assets/img/logo.png" alt="" style="width: 200px; margin-top: 4px;">
+                    <!-- <h1>Our fit</h1> -->
 
-    // 이제 모든 navbar-li 요소를 순회하면서 "active" 클래스를 찾습니다.
-    for (var i = 0; i < navItems.length; i++) {
-        // 현재 navbar-li 요소가 "active" 클래스를 가지고 있다면
-        if (navItems[i].classList.contains('active')) {
-            // "active" 클래스를 제거합니다.
-            navItems[i].classList.remove('active');
+                </div>
 
-            // 다음 navbar-li 요소가 있는지 확인하고, 있다면 "active" 클래스를 추가합니다.
-            if (navItems[i + 1]) {
-                navItems[i + 1].classList.add('active');
-            }
-            // 작업을 마친 후, 더 이상 순회할 필요가 없으므로 루프에서 빠져나옵니다.
-            break;
-        }
-    }
-  </script>
+                <div id="main" style="background-color: white;">리뷰페이지</div>
+
+
+                <div id="footer">
+                    <h1>Ourfit</h1>
+                    피트니스크루<br>
+                    팀장 김대현: ysm691611@naver.com<br>
+                    변지협 오주현 류혜림 염다영<br>
+                    인공지능사관학교<br>
+                    @all rights reserved
+                
+                </div>
+
+            </div>
+            <div id="main-navbar" class="navbar">
+                <ul class="navbar-ul">
+
+                    <li class="navbar-li1 navbar-li"><a href="index.html"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="presentation"><path fill-rule="evenodd" clip-rule="evenodd" d="m20.247 9.75-7.19-7.19-1.06-1.06-1.061 1.06v.001L3.754 9.75H3.75v9.75a3 3 0 0 0 3 3h13.5V9.75h-.003ZM18.75 21h-12a1.5 1.5 0 0 1-1.5-1.5v-9.126l6.747-6.752 6.753 6.753V21ZM15 18H9v-1.5h6V18Z" fill="#4C4C4C"></path></svg><br>홈</a></li>
+                    
+                    <li class="navbar-li2 navbar-li"><a href="map.html"><svg width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" xmlns="http://www.w3.org/2000/svg" role="presentation">
+                                <mask id="navbar-hospital-off_svg__a" mask-type="alpha" maskUnits="userSpaceOnUse" x="3"
+                                    y="1" width="18" height="22">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 1.5h18v21H3v-21Z" fill="#fff">
+                                    </path>
+                                </mask>
+                                <g mask="url(#navbar-hospital-off_svg__a)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M11.969 20.638c-1.664-1.07-7.332-5.12-7.332-10.643 0-3.832 3.303-6.95 7.363-6.95 4.06 0 7.363 3.118 7.363 6.95 0 4.906-5.745 9.442-7.394 10.643ZM12 1.5c-4.963 0-9 3.81-9 8.495 0 7.304 8.228 12.049 8.579 12.247l.455.258.435-.287C12.818 21.983 21 16.5 21 9.995 21 5.311 16.963 1.5 12 1.5Z"
+                                        fill="#4C4C4C"></path>
+                                </g>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12.75 6.781h-1.5v2.25H9v1.5h2.25v2.25h1.5v-2.25H15v-1.5h-2.25v-2.25Z"
+                                    fill="#4C4C4C"></path>
+                            </svg><br>지도</a></li>
+                    <li class="navbar-li3 navbar-li"><a href="community.html"><img src="./Assets/img/community-icon.svg"
+                                alt="community icon" width="24px" height="24px"><br>커뮤니티</a></li>
+                    <li class="navbar-li4 navbar-li"><a href="column.html"><svg width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3.75 1.5V19.5C3.75 21.1575 5.0925 22.5 6.75 22.5H20.25V1.5H3.75ZM15.75 3V8.205L14.25 6.9825L12.75 8.205V3H15.75ZM18.75 21H6.75C5.925 21 5.25 20.325 5.25 19.5V3H11.25V9C11.25 9.4575 11.52 9.8625 11.9475 10.0425C12.3525 10.215 12.8175 10.125 13.14 9.8325L14.2575 8.925L15.375 9.8325C15.585 10.0275 15.855 10.1325 16.1325 10.1325C16.275 10.1325 16.425 10.1025 16.5675 10.05C16.9875 9.8775 17.265 9.465 17.265 9.0075V3H18.765V21H18.75Z"
+                            fill="#4C4C4C"></path>
+                    </svg><br>컬럼</a></li>
+                    <li class="navbar-li5 navbar-li"><a href="review.html"><img src="./Assets/img/review-icon.svg"
+                        alt="community icon" width="22px" height="22px"><br>ocr리뷰</a></li>
+
+                </ul>
+            </div>
+
+
+        </div>
+    </div>
+
+    
 </body>
 </html>

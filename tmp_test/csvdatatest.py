@@ -1,7 +1,7 @@
 import csv
 
 # CSV 파일 열기
-with open('./gymdata/testcsvdata.csv', 'r') as file:
+with open('./tmp_test/경기도 광주시_체육시설현황_20220816.csv', 'r') as file:
     # CSV 데이터를 읽을 때 사용할 구분자 지정 (기본값은 쉼표)
     csv_reader = csv.reader(file)
 

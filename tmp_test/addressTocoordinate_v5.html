@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>간단한 지도 표시하기</title>
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=Your_Client_ID&submodules=geocoder"></script>
+</head>
+<body>
+<div id="map" style="width:100%;height:600px;"></div>
+<script>
+var center = new naver.maps.LatLng(37.3595316, 127.1052133);
+
+var map = new naver.maps.Map('map', {
+    center: center,
+    zoom: 15
+});
+
+naver.maps.Service.geocode({ address: '서울특별시 서초구 신반포로23길 41, 4층 404호 (잠원동, 신반포2지구아파트)' }, function(status, response) {
+    if (status === naver.maps.Service.Status.ERROR) {
+        return alert('Something wrong!');
+    }
+
+    // 성공 시의 response 처리
+    return alert('Good job!');
+});
+
+</script>
+</body>
+</html>

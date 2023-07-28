@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
     <link rel="stylesheet" href="Assets/css/mainframe.css">
-	<script src="./js/jquery-3.7.0.js"></script>
-    <!--
+    <link rel="stylesheet" href="Assets/css/index.css">
 
-html,body
+    <style>
+        /* 
+        html,body
         └ # whole
             └ # mainframe
                 ├ # main-content
@@ -53,15 +55,15 @@ html,body
                         ├ . navbar-li
                         ├ . navbar-li
                         └ . navbar-li
-
-    -->
-        
+    */
+    </style>
 </head>
+
 <body>
 
     <div id="whole">
         <div id="mainframe">
-            
+
             <div id="main-content">
                 <div id="header">
                     <img src="Assets/img/logo.png" alt="" style="width: 200px; margin-top: 4px;">
@@ -70,33 +72,73 @@ html,body
                 </div>
 
                 <div id="main" style="background-color: white;">
-                
-                    <div id="map" style="width:440px;height:900px;"></div>
-                
+
+                    <div class="searchbar">
+                        <div class="searchbar-box">
+                            <form action="" class="searchbar-box-window"></form>
+                            <div class="searchbar-box-button"></div>
+                        </div>
+                    </div>
+
+                    <div class="slick">
+                        <div class="slick-album"></div>
+                    </div>
+
+                    <div class="category-info">
+                        <h1 style="width: 388px; height: 28px; font-size: 20px;">관심있는 운동을 선택해보세요.</h1>
+
+                    </div>
+
+                    <div class="category-box">
+
+                        <nav style="width: 440px; height: 190px;">
+                            <ol class="category-box-ol">
+                                <li class="category-item">헬스장</li>
+                                <li class="category-item">수영</li>
+                                <li class="category-item">필라테스</li>
+                                <li class="category-item">크로스핏</li>
+                                <li class="category-item">베드민턴</li>
+                                <li class="category-item">클라이밍</li>
+                                <li class="category-item">무도장</li>
+                                <li class="category-item">스쿼시</li>
+
+                            </ol>
+
+                        </nav>
+
+                    </div>
 
 
+                    <div class="mapbox">
+                        <div class="map"></div>
+                    </div>
 
 
+                    <div class="communityframe">
+                        <div class="communitybox">
+                            <div class="communitybox-intro">
 
+                                <h2 style="float: left;">커뮤니티</h2>
+                                <div class="seeall-arrow">
 
+                                </div>
+                                <div class="seeall">
+                                    <a href="">전체보기</a>
+                                </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                            </div>
+                            <ul class="communitybox-contents">
+                                <li class="communitybox-content">
+                                    <img src="testimg.png" alt="" class="communitybox-content-img">
+                                    <p class="communitybox-content-title">헬스장 추천</p>
+                                    <h3 class="communitybox-content-detail">지역 헬스장 추천 받아가세요</h3>
+                                </li>
+                                <li class="communitybox-content"></li>
+                                <li class="communitybox-content"></li>
+                                <li class="communitybox-content"></li>
+                            </ul>
+                        </div>
+                    </div>
 
 
                 </div>
@@ -109,7 +151,7 @@ html,body
                     변지협 오주현 류혜림 염다영<br>
                     인공지능사관학교<br>
                     @all rights reserved
-                
+
                 </div>
 
             </div>
@@ -117,7 +159,6 @@ html,body
                 <ul class="navbar-ul">
 
                     <li class="navbar-li1 navbar-li"><a href="index.html"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="presentation"><path fill-rule="evenodd" clip-rule="evenodd" d="m20.247 9.75-7.19-7.19-1.06-1.06-1.061 1.06v.001L3.754 9.75H3.75v9.75a3 3 0 0 0 3 3h13.5V9.75h-.003ZM18.75 21h-12a1.5 1.5 0 0 1-1.5-1.5v-9.126l6.747-6.752 6.753 6.753V21ZM15 18H9v-1.5h6V18Z" fill="#4C4C4C"></path></svg><br>홈</a></li>
-                    
                     <li class="navbar-li2 navbar-li"><a href="map.html"><svg width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" xmlns="http://www.w3.org/2000/svg" role="presentation">
                                 <mask id="navbar-hospital-off_svg__a" mask-type="alpha" maskUnits="userSpaceOnUse" x="3"
@@ -154,83 +195,6 @@ html,body
     </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-	<script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=79769e254f2328cac41473351ff2b861"></script>
-	<script>
-		var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
-		    mapOption = {
-		        center: new kakao.maps.LatLng(37.498746257,127.303205280), // 지도의 중심좌표
-		        level: 3, // 지도의 확대 레벨
-		        mapTypeId : kakao.maps.MapTypeId.ROADMAP // 지도종류
-		    }; 
-
-		// 지도를 생성한다 
-		var map = new kakao.maps.Map(mapContainer, mapOption); 
-
-	// 마커를 표시할 위치와 내용을 가지고 있는 객체 배열입니다 
-	var positions = [
-		{
-			content: '<div>카카오</div>', 
-			latlng: new kakao.maps.LatLng(37.5096, 127.0000)
-		},
-		{
-			content: '<div>생태연못</div>', 
-			latlng: new kakao.maps.LatLng(33.450936, 126.569477)
-		},
-		{
-			content: '<div>텃밭</div>', 
-			latlng: new kakao.maps.LatLng(33.450879, 126.569940)
-		},
-		{
-			content: '<div>근린공원</div>',
-			latlng: new kakao.maps.LatLng(33.451393, 126.570738)
-		}
-	];
-
-	for (var i = 0; i < positions.length; i ++) {
-		// 마커를 생성합니다
-		var marker = new kakao.maps.Marker({
-			map: map, // 마커를 표시할 지도
-			position: positions[i].latlng // 마커의 위치
-		});
-
-		// 마커에 표시할 인포윈도우를 생성합니다 
-		var infowindow = new kakao.maps.InfoWindow({
-			content: positions[i].content // 인포윈도우에 표시할 내용
-		});
-
-		// 마커에 mouseover 이벤트와 mouseout 이벤트를 등록합니다
-		// 이벤트 리스너로는 클로저를 만들어 등록합니다 
-		// for문에서 클로저를 만들어 주지 않으면 마지막 마커에만 이벤트가 등록됩니다
-		kakao.maps.event.addListener(marker, 'mouseover', makeOverListener(map, marker, infowindow));
-		kakao.maps.event.addListener(marker, 'mouseout', makeOutListener(infowindow));
-	}
-
-	// 인포윈도우를 표시하는 클로저를 만드는 함수입니다 
-	function makeOverListener(map, marker, infowindow) {
-		return function() {
-			infowindow.open(map, marker);
-		};
-	}
-
-	// 인포윈도우를 닫는 클로저를 만드는 함수입니다 
-	function makeOutListener(infowindow) {
-		return function() {
-			infowindow.close();
-		};
-	}
-	</script>
-    
 </body>
+
 </html>

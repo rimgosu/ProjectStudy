@@ -108,3 +108,13 @@ html, body {
     
 }
 
+.navbar-li {
+    padding-top: 10px;
+}
+
+
+.navbar-li a{
+    font-size: 12px;   
+    text-decoration: none;
+    color: rgb(102,102,102);
+}
