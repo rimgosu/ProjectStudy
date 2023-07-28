@@ -172,3 +172,7 @@
     height: 48px;
     background-color: gray;
 }
+
+.navbar-li1{
+    background-color: gray !important;
+}
