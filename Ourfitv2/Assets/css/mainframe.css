@@ -10,7 +10,7 @@ html, body {
 }
 
 ::selection {
-    background-color: rgb(255, 247, 224);
+    background-color: #ffffff;
 }
 
 #whole {
@@ -24,7 +24,7 @@ html, body {
 #mainframe {
     width: 440px;
     height: auto; 
-    background-color: rgb(162, 162, 162);
+    background-color: #ffffff;
     box-shadow: 10px 0px 20px -10px rgba(0,0,0,0.2), -10px 0px 20px -10px rgba(0,0,0,0.2); 
 }
 
@@ -42,16 +42,17 @@ html, body {
 
 
 #header {
-    width: 440px;
     height: 48px;
-    background-color: white;
+    padding: 8px 16px;
+    display: flex;
+    position: relative;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    box-sizing: border-box;
     z-index: 100;
-
-    position: sticky;
-    top: 0px;
-    display: block;
-
-    text-align: center;
+    background-color: #ffffff;
 }
 
 #main {
@@ -129,3 +130,6 @@ html, body {
     text-decoration: none;
     color: rgb(102,102,102);
 }
+
+
+

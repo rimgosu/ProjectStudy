@@ -51,18 +51,16 @@
 
 .category-info {
     width: 388.011px;
-    height: 27.997px;
-    padding-left: 26px;
-    padding-right: 26px;
-    padding-bottom: 16px;
-    background-color: red;
+    height: 27.997px;    
+    background-color: #ffffff;
+    padding: 0px 26px 16px !important;
 }
 
 
 .category-box {
     width: 440px;
     height: 190px; 
-    background-color: antiquewhite;
+    background-color: #ffffff;
 }
 
 .category-box-ol {
@@ -70,16 +68,22 @@
     padding-right: 26px;
     width: 388px;
     height: 190px;
-    background-color: lightblue;
+    background-color: #ffffff;
     text-align: center;
     list-style-type: none;
+    list-style: none;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    box-sizing: border-box;
+    place-items: center;
 }
 
 .category-item {
     width: 90.994px;
     height: 85.994px;
-    float: left;
-    border: 1px solid black;
+    float: left;    
 }
 
 

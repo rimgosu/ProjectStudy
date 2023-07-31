@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/mainframe.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/indexNew.css">
+</head>
+<body>
+    <div id="whole">
+            <div id="main-content">
+                <div id="header">
+                    <div class="top-header">
+                        <img src="img/logo.png" alt="friendsfit-logo">
+                         <!-- <h1>Our fit</h1> -->
+                    </div>
+                </div>
+                <main id="screenmain" class="screen-main">
+                    <div class="SignInPageTemplate">
+                        <h1 class="SignInPageTemplate-1">여러분을 위한 운동 메이트! 프렌즈핏에 오신 것을 <br>환영합니다!
+                        </h1>
+                    </div>
+                    <div class="JoinButton">
+                        <div class="JoinButton-1">
+                            <a href="javascript:kakaoLogin();"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXTjWznCTwjP_gpmZLapSLd_FHByYs4Sr8Cg&usqp=CAU" style="height:60px;width:auto;"></a>
+                                <script src="https://developers.kakao.com/sdk/js/kakao.js" class="kakao"></script>
+                                <script>
+                                    // javascript key
+                                    // 4c4893e98bd1cc08244a52feeaf116cf
+                                    window.Kakao.init("4c4893e98bd1cc08244a52feeaf116cf");
+
+                                    function kakaoLogin(){
+                                        window.Kakao.Auth.login({
+                                            scope:'profile_nickname, profile_image, account_email, gender',
+                                            success: function(authObj){
+                                                console.log(authObj);
+                                                window.Kakao.API.request({
+                                                    url:'/v2/user/me',
+                                                    success: res => {
+                                                        const kakao_account = res.kakao_account;
+                                                        console.log(kakao_account);
+                                                    }
+                                                });
+                                            }
+                                        });
+
+                                    }
+                                </script>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

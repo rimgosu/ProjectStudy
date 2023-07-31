@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        let data = {
+        "version": "V2",
+        "requestId": "string",
+        "timestamp": 0,
+        "lang":"ko",
+        "images": [
+            {
+            "format": "jpg",
+            "name": "test 1",
+            "url": "https://blog.kakaocdn.net/dn/by79KZ/btqFHbaHAWd/ymCPJQOETF4WyFEocKpIfK/img.jpg"
+            }
+        ]
+        };
+
+        fetch('http://clovaocr-api-kr.ncloud.com/external/v1/24059/c58020607a915d8f12fc414e06832cb2fdbdc6c27bb17de037d31e03eb72dbc4', {
+        method: 'POST', 
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data), 
+        })
+        .then(response => response.json())
+        .then(data => {
+        console.log('Success:', data);
+        })
+        .catch((error) => {
+        console.error('Error:', error);
+        });
+
+        </script>
+
+
+
+</body>
+</html>

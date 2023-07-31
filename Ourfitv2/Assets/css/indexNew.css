@@ -1,0 +1,193 @@
+.category-box-ol li div{
+    padding: 10px 0px;
+    position: relative;
+    margin: 0px auto;
+    z-index: 1;
+    display: flex;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 97px;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.menu-text{
+    margin: 0px;
+    font-style: normal;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 16px;
+    letter-spacing: 0px;
+}
+
+.category-box-ol li div a{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.menu-category{
+    margin-bottom: 10px;
+}
+
+h1{
+    margin: 0px;
+    font-style: normal;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 28px;
+    letter-spacing: 0px;
+    display: block;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+#header img{
+    height: 17px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.top-header{
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    left: 90px;
+    top: 0px;
+    height: 100%;
+}
+
+.button-group{
+    min-width: 30px;
+}
+
+.sign-in-button{
+    height: 32px;
+    padding: 6px 14px;
+    border: 1px solid rgb(214, 214, 214);
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: 0px;
+    color: rgb(0, 0, 0);
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+button{
+    appearance: auto;
+    font-style: ;
+    font-variant-ligatures: ;
+    font-variant-caps: ;
+    font-variant-numeric: ;
+    font-variant-east-asian: ;
+    font-variant-alternates: ;
+    font-stretch: ;
+    font-optical-sizing: ;
+    font-kerning: ;
+    font-feature-settings: ;
+    font-variation-settings: ;
+    text-rendering: auto;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    margin: 0em;
+}
+
+.SignInPageTemplate{
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding: 0px 49px;
+}
+
+.screen-main{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    min-height: calc(100vh - 48px);
+}
+
+main{
+    display: block;
+}
+
+.SignInPageTemplate-1{
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 36px;
+    letter-spacing: 0px;
+    white-space: break-spaces;
+}
+
+.SignInPageTemplate h1 {
+    margin: unset;
+    display: block;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.kakako{
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    letter-spacing: 0px;
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    height: 56px;
+    padding: 16px;
+    background-color: rgb(255, 205, 0);
+    color: rgb(0, 0, 0);
+    -webkit-box-align: center;
+    align-items: center;
+    border-radius: 8px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 8px;
+    cursor: pointer;
+}
+
+.JoinButton{
+    margin-top: 26px;
+}
+
+.JoinButton-1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.JoinButton img{
+    display: block;
+    margin: auto;
+}
