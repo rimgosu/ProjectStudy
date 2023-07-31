@@ -14,8 +14,8 @@ html, body {
 }
 
 #whole {
-    display: grid;
-    place-items: center; 
+    display: flex;
+    justify-content: center;
     height: 100vh; 
     width: 100%;
 }
@@ -23,10 +23,21 @@ html, body {
 
 #mainframe {
     width: 440px;
-    /* chain of height */
     height: auto; 
     background-color: rgb(162, 162, 162);
-    box-shadow: 10px 0px 20px -10px rgba(0,0,0,0.2), -10px 0px 20px -10px rgba(0,0,0,0.2); /* 그림자 수정 */
+    box-shadow: 10px 0px 20px -10px rgba(0,0,0,0.2), -10px 0px 20px -10px rgba(0,0,0,0.2); 
+}
+
+#aside {
+    display: none;
+    width: 380px;
+    height: auto; 
+    background-color: white;
+    box-shadow: 10px 0px 20px -10px rgba(0,0,0,0.2), -10px 0px 20px -10px rgba(0,0,0,0.2); 
+    border-radius: 20px; 
+    margin: 20px 30px 10px 15px;
+    padding: 10px 10px 10px 10px;
+    position: sticky;
 }
 
 
@@ -100,7 +111,7 @@ html, body {
     float: left;
     
     width: 87.997px;
-    height: 65px;
+    height: 55px;
 
     list-style: none;
 

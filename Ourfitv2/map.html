@@ -11,7 +11,7 @@
 
 html,body
         └ # whole
-            └ # mainframe
+            └ # mainframe, # aside
                 ├ # main-content
                 │   ┝ # header
                 │   ├ # main
@@ -59,8 +59,8 @@ html,body
 </head>
 <body>
 
-    <div id="whole">
-        <div id="mainframe">
+    <div id="whole" >
+        <div id="mainframe" >
             
             <div id="main-content">
                 <div id="header">
@@ -151,6 +151,7 @@ html,body
 
 
         </div>
+        <div id="aside" >안녕하세요, 이 곳에 정보가 뜰 것입니다</div>
     </div>
 
 
@@ -170,7 +171,7 @@ html,body
 	<script>
 		var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
 		    mapOption = {
-		        center: new kakao.maps.LatLng(37.498746257,127.303205280), // 지도의 중심좌표
+		        center: new kakao.maps.LatLng(33.450936,126.569477), // 지도의 중심좌표
 		        level: 3, // 지도의 확대 레벨
 		        mapTypeId : kakao.maps.MapTypeId.ROADMAP // 지도종류
 		    }; 
@@ -215,6 +216,14 @@ html,body
 		// for문에서 클로저를 만들어 주지 않으면 마지막 마커에만 이벤트가 등록됩니다
 		kakao.maps.event.addListener(marker, 'mouseover', makeOverListener(map, marker, infowindow));
 		kakao.maps.event.addListener(marker, 'mouseout', makeOutListener(infowindow));
+        // 지도 클릭 이벤트를 등록한다 (좌클릭 : click, 우클릭 : rightclick, 더블클릭 : dblclick)
+        // 마커에 클릭 이벤트를 등록한다 (우클릭 : rightclick)
+		kakao.maps.event.addListener(marker, 'click', function() {
+            document.getElementById('aside').style.display = 'block';
+        });
+
+        
+        
 	}
 
 	// 인포윈도우를 표시하는 클로저를 만드는 함수입니다 
@@ -230,6 +239,12 @@ html,body
 			infowindow.close();
 		};
 	}
+
+    // 지도 클릭 이벤트를 등록한다 (좌클릭 : click, 우클릭 : rightclick, 더블클릭 : dblclick)
+    kakao.maps.event.addListener(map, 'click', function (mouseEvent) {
+        console.log('지도에서 클릭한 위치의 좌표는 ' + mouseEvent.latLng.toString() + ' 입니다.');
+    });	
+    
 	</script>
     
 </body>
