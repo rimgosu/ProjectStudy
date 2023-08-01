@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-08-01T06:23:32.510Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.188" etag="UKpmuJkAOopi40exbFyk" version="21.6.6" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-01T06:24:21.277Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.188" etag="yw4xqswqeMDOhNCIRPXz" version="21.6.6" type="github">
   <diagram id="prtHgNgQTEPvFCAcTncT" name="Page-1">
     <mxGraphModel dx="2700" dy="2187" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -470,6 +470,15 @@
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="343" y="22" as="sourcePoint" />
             <mxPoint x="681" y="-46" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fqmWYTtrZk_v-npSEMXv-1" value="글번호" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="681" y="59" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="fqmWYTtrZk_v-npSEMXv-2" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="ZeWv8mCZg6Lv4Q8P0mIy-32" target="fqmWYTtrZk_v-npSEMXv-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="322" y="-126" as="sourcePoint" />
+            <mxPoint x="660" y="73" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
