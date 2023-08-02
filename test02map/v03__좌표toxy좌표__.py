@@ -1,13 +1,28 @@
 import pandas as pd
 import numpy as np
 import requests
+import json
 
+# Load the JSON file
+with open('C:/keys.json', 'r') as f:
+    data = json.load(f)
+
+# Extract the needed values
+naverMapID = None
+naverMapPassword = None
+keys = data.get('keys')
+
+for key in keys:
+    if 'naverMapID' in key:
+        naverMapID = key['naverMapID']
+    if 'naverMapPassword' in key:
+        naverMapPassword = key['naverMapPassword']
 
 def get_coordinates(address):
     url = "https://naveropenapi.apigw.ntruss.com/map-geocode/v2/geocode"
     headers = {
-        "X-NCP-APIGW-API-KEY-ID": "cllsw53gb0",
-        "X-NCP-APIGW-API-KEY": "ORE1ichm7zV9lqctMCyjr3sDumov4lwTKf5Khash"
+        "X-NCP-APIGW-API-KEY-ID": naverMapID,
+        "X-NCP-APIGW-API-KEY": naverMapPassword
     }
     params = {"query": address}
     
@@ -37,4 +52,4 @@ def add_coordinates_and_save(input_csv, output_csv):
     print(f"Saved data to {output_csv}")
 
 # Test the function
-add_coordinates_and_save('./maptest/test.csv', './maptest/testresult.csv')
+add_coordinates_and_save('./test02map/test.csv', './test02map/testresult.csv')
