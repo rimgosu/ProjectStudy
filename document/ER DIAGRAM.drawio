@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-08-03T09:51:56.771Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="W7QzyhRadwq8lG_TurdG" version="21.6.6" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-03T12:38:40.710Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="iJpvz5nMdc2UFh3y42O1" version="21.6.6" type="github">
   <diagram id="prtHgNgQTEPvFCAcTncT" name="Page-1">
-    <mxGraphModel dx="3406" dy="2354" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2600" dy="1955" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -481,92 +481,95 @@
             <mxPoint x="660" y="73" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="s3L-ne_ulO0HwT5f8NQK-1" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;TB_FILE&lt;/font&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+        <mxCell id="s3L-ne_ulO0HwT5f8NQK-1" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;TB_FILE&lt;/font&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
           <mxGeometry x="50" y="-665" width="139" height="139" as="geometry" />
         </mxCell>
-        <mxCell id="s3L-ne_ulO0HwT5f8NQK-2" value="파일 번호" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="s3L-ne_ulO0HwT5f8NQK-2" value="파일 번호" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-71.5" y="-771" width="91.5" height="61" as="geometry" />
         </mxCell>
-        <mxCell id="s3L-ne_ulO0HwT5f8NQK-3" value="파일이름" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="s3L-ne_ulO0HwT5f8NQK-3" value="파일이름" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="27" y="-771" width="94.5" height="63" as="geometry" />
         </mxCell>
-        <mxCell id="s3L-ne_ulO0HwT5f8NQK-4" value="파일실제이름" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="s3L-ne_ulO0HwT5f8NQK-4" value="파일실제이름" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="133" y="-769.5" width="90" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="s3L-ne_ulO0HwT5f8NQK-5" value="다운로드횟수" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="s3L-ne_ulO0HwT5f8NQK-5" value="다운로드횟수" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="228" y="-769.5" width="88.5" height="59" as="geometry" />
         </mxCell>
-        <mxCell id="s3L-ne_ulO0HwT5f8NQK-6" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="s3L-ne_ulO0HwT5f8NQK-1" target="s3L-ne_ulO0HwT5f8NQK-2">
+        <mxCell id="s3L-ne_ulO0HwT5f8NQK-6" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="s3L-ne_ulO0HwT5f8NQK-1" target="s3L-ne_ulO0HwT5f8NQK-2" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="-280" y="-723" as="sourcePoint" />
             <mxPoint x="18" y="-794" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="s3L-ne_ulO0HwT5f8NQK-7" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="s3L-ne_ulO0HwT5f8NQK-1" target="s3L-ne_ulO0HwT5f8NQK-3">
+        <mxCell id="s3L-ne_ulO0HwT5f8NQK-7" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="s3L-ne_ulO0HwT5f8NQK-1" target="s3L-ne_ulO0HwT5f8NQK-3" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint y="-651" as="sourcePoint" />
             <mxPoint x="-16" y="-700" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="s3L-ne_ulO0HwT5f8NQK-8" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="s3L-ne_ulO0HwT5f8NQK-1" target="s3L-ne_ulO0HwT5f8NQK-4">
+        <mxCell id="s3L-ne_ulO0HwT5f8NQK-8" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="s3L-ne_ulO0HwT5f8NQK-1" target="s3L-ne_ulO0HwT5f8NQK-4" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="93" y="-648" as="sourcePoint" />
             <mxPoint x="84" y="-698" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="s3L-ne_ulO0HwT5f8NQK-9" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="s3L-ne_ulO0HwT5f8NQK-1" target="s3L-ne_ulO0HwT5f8NQK-5">
+        <mxCell id="s3L-ne_ulO0HwT5f8NQK-9" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="s3L-ne_ulO0HwT5f8NQK-1" target="s3L-ne_ulO0HwT5f8NQK-5" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="123" y="-652" as="sourcePoint" />
             <mxPoint x="188" y="-699" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="s3L-ne_ulO0HwT5f8NQK-11" value="리뷰 글에&lt;br&gt;이미지추가" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="s3L-ne_ulO0HwT5f8NQK-11" value="리뷰 글에&lt;br&gt;이미지추가" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="214" y="-576" width="90" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="s3L-ne_ulO0HwT5f8NQK-12" value="" style="endArrow=none;html=1;rounded=0;exitX=0.991;exitY=0.57;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="s3L-ne_ulO0HwT5f8NQK-1" target="s3L-ne_ulO0HwT5f8NQK-11">
+        <mxCell id="s3L-ne_ulO0HwT5f8NQK-12" value="" style="endArrow=none;html=1;rounded=0;exitX=0.991;exitY=0.57;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="s3L-ne_ulO0HwT5f8NQK-1" target="s3L-ne_ulO0HwT5f8NQK-11" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="132" y="-664" as="sourcePoint" />
             <mxPoint x="282" y="-700" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="s3L-ne_ulO0HwT5f8NQK-13" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="s3L-ne_ulO0HwT5f8NQK-11" target="ZeWv8mCZg6Lv4Q8P0mIy-36">
+        <mxCell id="s3L-ne_ulO0HwT5f8NQK-13" value="" style="endArrow=none;html=1;rounded=0;" parent="1" source="s3L-ne_ulO0HwT5f8NQK-11" target="ZeWv8mCZg6Lv4Q8P0mIy-36" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="171" y="-598" as="sourcePoint" />
             <mxPoint x="227" y="-568" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="s3L-ne_ulO0HwT5f8NQK-14" value="파일 번호" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="s3L-ne_ulO0HwT5f8NQK-14" value="파일 번호" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="522" y="-983" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="s3L-ne_ulO0HwT5f8NQK-15" value="" style="endArrow=none;html=1;rounded=0;entryX=0.021;entryY=0.592;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="ZeWv8mCZg6Lv4Q8P0mIy-36" target="s3L-ne_ulO0HwT5f8NQK-14">
+        <mxCell id="s3L-ne_ulO0HwT5f8NQK-15" value="" style="endArrow=none;html=1;rounded=0;entryX=0.021;entryY=0.592;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="ZeWv8mCZg6Lv4Q8P0mIy-36" target="s3L-ne_ulO0HwT5f8NQK-14" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="435" y="-571" as="sourcePoint" />
             <mxPoint x="532" y="-733" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="s3L-ne_ulO0HwT5f8NQK-16" value="파일 번호" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="s3L-ne_ulO0HwT5f8NQK-16" value="파일 번호" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-260" y="-850.5" width="91.5" height="61" as="geometry" />
         </mxCell>
-        <mxCell id="s3L-ne_ulO0HwT5f8NQK-17" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" target="s3L-ne_ulO0HwT5f8NQK-16" source="ZeWv8mCZg6Lv4Q8P0mIy-114">
+        <mxCell id="s3L-ne_ulO0HwT5f8NQK-17" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="ZeWv8mCZg6Lv4Q8P0mIy-114" target="s3L-ne_ulO0HwT5f8NQK-16" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="-71.5" y="-848" as="sourcePoint" />
             <mxPoint x="-146.5" y="-973" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="s3L-ne_ulO0HwT5f8NQK-18" value="커뮤니티 글&lt;br&gt;이미지추가" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="s3L-ne_ulO0HwT5f8NQK-18" value="커뮤니티 글&lt;br&gt;이미지추가" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-80" y="-632" width="90" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="s3L-ne_ulO0HwT5f8NQK-19" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="ZeWv8mCZg6Lv4Q8P0mIy-114" target="s3L-ne_ulO0HwT5f8NQK-18">
+        <mxCell id="s3L-ne_ulO0HwT5f8NQK-19" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="ZeWv8mCZg6Lv4Q8P0mIy-114" target="s3L-ne_ulO0HwT5f8NQK-18" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="-125" y="-565" as="sourcePoint" />
             <mxPoint x="-70" y="-567" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="s3L-ne_ulO0HwT5f8NQK-20" value="" style="endArrow=none;html=1;rounded=0;entryX=0.001;entryY=0.545;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="s3L-ne_ulO0HwT5f8NQK-18" target="s3L-ne_ulO0HwT5f8NQK-1">
+        <mxCell id="s3L-ne_ulO0HwT5f8NQK-20" value="" style="endArrow=none;html=1;rounded=0;entryX=0.001;entryY=0.545;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="s3L-ne_ulO0HwT5f8NQK-18" target="s3L-ne_ulO0HwT5f8NQK-1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="-115" y="-608" as="sourcePoint" />
             <mxPoint x="-83" y="-607" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="bk-RnyWVq7iNPV5r6qg8-2" value="ALTER TABLE  TB_REVIEW &#xa;ADD CONSTRAINT FK_TB_REVIEW_TB_FACILITY FOREIGN KEY(시설번호) REFERENCES TB_FACILITY(시설번호);&#xa;ALTER TABLE  TB_REVIEW &#xa;ADD CONSTRAINT FK_TB_REVIEW_TB_MEMBER FOREIGN KEY(아이디) REFERENCES TB_MEMBER(아이디);&#xa;ALTER TABLE  TB_REVIEW &#xa;ADD CONSTRAINT FK_TB_REVIEW_TB_FILE FOREIGN KEY(파일번호) REFERENCES TB_FILE(파일번호);&#xa;&#xa;&#xa;ALTER TABLE  TB_COMMUNITY &#xa;ADD CONSTRAINT FK_TB_COMMUNITY_TB_MEMBER FOREIGN KEY(아이디) REFERENCES TB_MEMBER(아이디);&#xa;ALTER TABLE  TB_COMMUNITY &#xa;ADD CONSTRAINT FK_TB_COMMUNITY_TB_FILE FOREIGN KEY(파일번호) REFERENCES TB_FILE(파일번호);&#xa;&#xa;&#xa;ALTER TABLE  TB_COMMENT &#xa;ADD CONSTRAINT FK_TB_COMMENT_TB_COMMUNITY FOREIGN KEY(글번호) REFERENCES TB_COMMUNITY(글번호);&#xa;ALTER TABLE  TB_COMMENT &#xa;ADD CONSTRAINT FK_TB_COMMENT_TB_MEMBER FOREIGN KEY(아이디) REFERENCES TB_MEMBER(아이디);&#xa;&#xa;SELECT * FROM TB_FILE;&#xa;SELECT * FROM TB_REVIEW;&#xa;&#xa;SELECT * FROM TB_FACILITY;&#xa;SELECT * FROM TB_REVIEW;&#xa;ALTER TABLE TB_REVIEW DROP COLUMN 시설번호;&#xa;DROP TABLE TB_REVIEW;&#xa;DROP TABLE TB_FACILITY;&#xa;DROP TABLE TB_COMMUNITY;&#xa;DROP TABLE TB_COMMENT;&#xa;DROP TABLE TB_FILE;&#xa;DROP TABLE TB_MEMBER;&#xa;&#xa;DROP TABLE MEMBER;&#xa;&#xa;&#xa;CREATE TABLE TB_FACILITY (&#xa;      시설번호  NUMBER   PRIMARY KEY&#xa;    , 시설이름  VARCHAR2(100)    &#xa;    , 구분     VARCHAR2(100) &#xa;    , 주요시설  VARCHAR2(100)&#xa;    , 영업시간  VARCHAR2(100)&#xa;    &#xa;    , 전화번호  VARCHAR2(100)&#xa;    , 가격     VARCHAR2(100)&#xa;    , 결제방법  VARCHAR2(100)&#xa;    , 편의시설  VARCHAR2(100)&#xa;    , 홈페이지  VARCHAR2(100)&#xa;    &#xa;    , 태그     VARCHAR2(100)&#xa;    , 설명    VARCHAR2(2000)&#xa;    , 설치년도  VARCHAR2(100)  &#xa;    , 면적     NUMBER&#xa;    , 주소    VARCHAR2(100)&#xa;    &#xa;    , X좌표   NUMBER&#xa;    , Y좌표   NUMBER&#xa;    , 등록일자  DATE&#xa;);&#xa;&#xa;&#xa;CREATE SEQUENCE FACILITY_NUM START WITH 1 INCREMENT BY 1;&#xa;CREATE SEQUENCE REVIEW_NUM START WITH 1 INCREMENT BY 1;&#xa;CREATE SEQUENCE FILE_NUM START WITH 1 INCREMENT BY 1;&#xa;CREATE SEQUENCE COMMUNITY_NUM START WITH 1 INCREMENT BY 1;&#xa;CREATE SEQUENCE COMMENT_NUM START WITH 1 INCREMENT BY 1;&#xa;&#xa;DROP SEQUENCE FACILITY_NUM;&#xa;DESC TB_MEMBER;&#xa;DESC TB_FILE;&#xa;DESC TB_REVIEW;&#xa;DESC TB_COMMENT;&#xa;DESC TB_COMMUNITY;&#xa;INSERT INTO TB_FACILITY (시설번호, 등록일자) VALUES (FACILITY_NUM.NEXTVAL,SYSDATE);&#xa;INSERT INTO TB_MEMBER VALUES (&#39;TEST5&#39;, &#39;비밀번호&#39;, &#39;이름&#39;, 20, &#39;01012341234&#39;, &#39;운동경력&#39;, &#39;주소&#39;,0,SYSDATE );&#xa;INSERT INTO TB_FILE VALUES (FILE_NUM.NEXTVAL, &#39;파일이름&#39;, &#39;파일실제이름&#39;, 0, &#39;Y&#39;, SYSDATE );&#xa;INSERT INTO TB_REVIEW VALUES (REVIEW_NUM.NEXTVAL, &#39;리뷰제목&#39;, &#39;리뷰내용&#39;, 1, &#39;TEST1&#39;,1, SYSDATE);&#xa;INSERT INTO TB_COMMUNITY VALUES (COMMUNITY_NUM.NEXTVAL, &#39;글제목&#39;, &#39;글내용&#39;,1, &#39;TEST1&#39;, SYSDATE);&#xa;INSERT INTO TB_COMMENT VALUES (COMMENT_NUM.NEXTVAL, &#39;댓글제목&#39;, &#39;댓글내용&#39;,&#39;TEST1&#39;, 1, SYSDATE);&#xa;&#xa;&#xa;SELECT * FROM TB_FACILITY;&#xa;&#xa;CREATE TABLE TB_REVIEW(&#xa;    리뷰번호 NUMBER PRIMARY KEY,&#xa;    리뷰제목 VARCHAR2(100) NOT NULL,&#xa;    리뷰내용 VARCHAR2(3900) NOT NULL,&#xa;    시설번호 NUMBER NOT NULL,&#xa;    아이디 VARCHAR2(50) NOT NULL,&#xa;    파일번호 NUMBER ,&#xa;    등록일자 DATE  &#xa;);&#xa;&#xa;&#xa;CREATE TABLE TB_MEMBER(&#xa;    아이디 VARCHAR2(20) PRIMARY KEY,&#xa;    비밀번호 VARCHAR2(20) NOT NULL,&#xa;    이름 VARCHAR2(20) NOT NULL,&#xa;    나이 NUMBER,&#xa;    연락처 VARCHAR2(20),&#xa;    운동경력 VARCHAR2(20),&#xa;    주소 VARCHAR2(20) NOT NULL,&#xa;    포인트 NUMBER,&#xa;    등록일자 DATE&#xa;);&#xa;&#xa;&#xa;CREATE TABLE TB_COMMUNITY(&#xa;    글번호 NUMBER PRIMARY KEY,&#xa;    글제목 VARCHAR2(100) NOT NULL,&#xa;    글내용 VARCHAR2(2000) NOT NULL,&#xa;    파일번호 NUMBER,&#xa;    아이디 VARCHAR2(50) NOT NULL,&#xa;    댓글번호 NUMBER NOT NULL,&#xa;    등록일자 DATE&#xa;);&#xa;&#xa;&#xa;CREATE TABLE TB_COMMENT(&#xa;    댓글번호 NUMBER PRIMARY KEY,&#xa;    댓글제목 VARCHAR2(100) NOT NULL,&#xa;    댓글내용 VARCHAR2(2000) NOT NULL,&#xa;    아이디 VARCHAR2(20) NOT NULL,&#xa;    글번호 NUMBER NOT NULL, &#xa;    등록일자 DATE&#xa;);&#xa;&#xa;CREATE TABLE TB_FILE(&#xa;    파일번호 NUMBER PRIMARY KEY,&#xa;    파일이름 VARCHAR2(1000),&#xa;    파일실제이름 VARCHAR2(1000),&#xa;    다운로드횟수  NUMBER,&#xa;    영수증유무 VARCHAR2(1) CHECK(영수증유무 IN (&#39;Y&#39;,&#39;N&#39;)),&#xa;    등록일자 DATE&#xa;);&#xa;&#xa;SELECT * FROM TB_COMMUNITY;&#xa;DROP TABLE TB_COMMENT;&#xa;DROP TABLE TB_COMMUNITY;&#xa;DROP TABLE TB_FILE;&#xa;&#xa;&#xa;DROP TABLE TB_FACILITY;&#xa;DROP TABLE TB_MEMBER;&#xa;DROP TABLE MEMBER;&#xa;&#xa;CREATE TABLE TB_COMMENT(&#xa;    댓글번호 NUMBER PRIMARY KEY,&#xa;    댓글제목 VARCHAR2(100) NOT NULL,&#xa;    댓글내용 VARCHAR2(1000) NOT NULL,&#xa;    작성자 VARCHAR2(50) NOT NULL,&#xa;    작성일자 DATE&#xa;);&#xa;&#xa;&#xa;CREATE TABLE TB_COMMUNITY(&#xa;    글번호 NUMBER PRIMARY KEY,&#xa;    글제목 VARCHAR2(100) NOT NULL,&#xa;    글내용 VARCHAR2(2000) NOT NULL,&#xa;    작성자 VARCHAR2(50) NOT NULL,&#xa;    작성일자 DATE&#xa;);&#xa;&#xa;&#xa;ALTER TABLE TB_COMMUNITY DROP COLUMN 댓글번호;&#xa;ALTER TABLE TB_COMMUNITY DROP COLUMN 작성자;&#xa;ALTER TABLE TB_COMMENT DROP COLUMN 작성자;&#xa;ALTER TABLE TB_COMMUNITY ADD 작성자 VARCHAR2(50);&#xa;ALTER TABLE TB_COMMENT ADD 작성자 VARCHAR2(50);&#xa;&#xa;&#xa;ROLLBACK;" style="text;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="2207" y="-422.60009765625" width="550" height="3996" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
