@@ -43,7 +43,6 @@
                    
                       String reviewHTML = "";
                    
-                   
                       dbDAO dbdao = new dbDAO();
                       ArrayList<reviewSelectDTO> reviewList = new ArrayList<reviewSelectDTO>();
                       
@@ -71,10 +70,13 @@
                             reviewHTML += "<span class=\"CommunityListItem__content__span\">";
                             reviewHTML += reviewList.get(i).getReviewContent();
                             // 더보기
-                            reviewHTML += "<span class=\"CommunityListItem__showMoreText\">";
-                            reviewHTML += "..더 보기";
+                            reviewHTML += "<span class=\"CommunityListItem__showMoreText\">"; 
+                            
+                            reviewHTML += "<a href='reviewSee.jsp?reviewNum=" + reviewList.get(i).getReviewNum() + "'>..더 보기</a>";
+                            
                             reviewHTML += "</span>";
                             reviewHTML += "</span></div>";
+                            
                             
                           reviewHTML += "</div>";
                           reviewHTML += "<section class=\"CommunityListItem__StyledCommunityActionBar\">";
@@ -96,10 +98,9 @@
                       }
                       
                       out.print(reviewHTML);
-            
-                      
-                   
                    %>
+                   
+                   
                    
                    
                    </div>

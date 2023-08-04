@@ -125,9 +125,7 @@ public class dbDAO {
 	
 	public ArrayList<reviewSelectDTO> getReviews() {
 		ArrayList<reviewSelectDTO> list = new ArrayList<reviewSelectDTO>();
-		
 		getConnection();
-			
 		try {	
 			String sql = "select * from tb_review";
 			psmt = conn.prepareStatement(sql);
@@ -145,12 +143,57 @@ public class dbDAO {
 		} finally {
 			close();
 		}
-		
 		return list;	
-		
-		
 	}
 	
+	public reviewSelectDTO getReview(int reviewNum) {
+		ArrayList<reviewSelectDTO> list = new ArrayList<reviewSelectDTO>();
+		getConnection();
+		try {	
+			String sql = "select * from tb_review where 리뷰번호=?";
+			psmt = conn.prepareStatement(sql);
+			psmt.setInt(1, reviewNum); 
+			ResultSet rs = psmt.executeQuery();
+			while (rs.next()) {
+				reviewSelectDTO reviews = new reviewSelectDTO(
+						rs.getInt(1), rs.getString(2), rs.getString(3), rs.getInt(4), rs.getString(5),
+						rs.getInt(6), rs.getString(7), rs.getInt(8), rs.getInt(9), rs.getInt(10));
+				list.add(reviews);
+			}
+			return list.get(0);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			close();
+		}
+		return null;	
+	}
+	
+	
+	public int commentUpload(commentDTO commentdto) {
+		getConnection();
+		
+		try {
+			String sql = "INSERT INTO TB_REVIEW_COMMENT VALUES (COMMENT_NUM.NEXTVAL, ?, ?, ?, SYSDATE, ?)";
+			psmt = conn.prepareStatement(sql);
+			psmt.setString(1, commentdto.getCommentContent());
+			psmt.setString(2, commentdto.getID());
+			psmt.setInt(3, commentdto.getReviewNum());
+			psmt.setInt(4, commentdto.getCommentLikeNum());
+			
+			cnt = psmt.executeUpdate();
+		
+			return cnt;
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			close();
+		}
+		
+		return cnt;
+	}
 	
 	
 }
