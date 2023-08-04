@@ -1,12 +1,14 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+<meta charset="EUC-KR">
 <title>Insert title here</title>
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/login.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/_login.css">
+
+
 </head>
 <body>
 	<div id="whole">
@@ -20,34 +22,30 @@
 	                </div>
 	                
 	                <main id="screenmain" class="screen-main">
-	                    <div class="SignInPageTemplate">
-	                        <h1 class="SignInPageTemplate-1">여러분을 위한 운동 메이트! 프렌즈핏에 오신 것을 <br>환영합니다!</h1>
-	                    </div>
 	                    
-	                    <div class="login">
-	                    	<h3 class="boxTitle">LOGIN</h3>
-	                    	<fieldset>
-	                    		<legend>회원로그인</legend>
-	                    		<label class="id ePlaceholder" title="아이디">
-	                    			<input id="member_id" name="member_id" fw-filter="isFill" fw-label="아이디" fw-msg class="inputTypeText" placeholder="아이디" value type="text">
-	                    		</label>
-	                    		<label class="password ePlaceholder" title="비밀번호">
-	                    			<input id="member_passwd" name="member_passwd" fw-filter="isFill&isMin[4]&isMax[16]" fw-label="패스워드" fw-msg autocomplete="off" placeholder="비밀번호" value type="password">
-	                    		</label>
-	                    		<a href="#none" class="btnLogin sizeL" onclick="MemberAction.login('member_form_3699931103'); return false;">로그인</a>
-	                    		<ul class="find">
-	                    			<li>
-	                    				<a href="">아이디찾기</a>
-	                    			</li>
-	                    			<li>
-	                    				<a href="">비밀번호찾기</a>
-	                    			</li>
-	                    			<li>
-	                    				<a href="">회원가입</a>
-	                    			</li>
-	                    		</ul>
-	                    	</fieldset>
-	                    </div>
+	                    <form id="member_form_3699931103" name="" action="/exec/front/Member/login/" method="post" target="_self" enctype="multipart/form-data">
+	
+							<div class="login">
+							        <h3 class="boxTitle">LOGIN</h3>
+							        <fieldset>
+									<legend>ȸ���α���</legend>
+							            <label class="id ePlaceholder" title="���̵�">
+							            	<input id="member_id" name="member_id" fw-filter="isFill" fw-label="���̵�" fw-msg="" class="inputTypeText" placeholder="���̵�" value="" type="text">
+							            </label>
+							            <label class="password ePlaceholder" title="��й�ȣ">
+							            	<input id="member_passwd" name="member_passwd" fw-filter="isFill&amp;isMin[4]&amp;isMax[16]" fw-label="�н�����" fw-msg="" autocomplete="off" value="" type="password" placeholder="��й�ȣ">
+							            </label>
+							            
+							            <a href="#none" class="btnLogin sizeL" onclick="MemberAction.login('member_form_3699931103'); return false;">�α���</a>
+										<ul class="find">
+											<li class="findlist"><a href="/member/id/find_id.html">���̵�ã��</a></li>
+							                <li class="findlist"><a href="/member/passwd/find_passwd_info.html">��й�ȣã��</a></li>
+							                <li class="findlist"><a href="join.jsp">ȸ������</a></li>
+							            </ul>
+							</fieldset>
+							</div>
+							</div>
+							</form>
                    </main>
                    
                    

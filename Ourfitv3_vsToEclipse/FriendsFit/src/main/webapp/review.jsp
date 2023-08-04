@@ -1,3 +1,6 @@
+<%@page import="java.util.ArrayList"%>
+<%@page import="com.model.reviewSelectDTO"%>
+<%@page import="com.model.dbDAO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -30,6 +33,79 @@
                 </div>
                 
                 <div id="main" style="background-color: white;">
+                
+                	<div><a href="reviewWrite.jsp">리뷰쓰기</a></div>
+                	
+                	<div>
+                	
+                	
+                	<%
+                	
+                		String reviewHTML = "";
+                	
+                	
+                		dbDAO dbdao = new dbDAO();
+                		ArrayList<reviewSelectDTO> reviewList = new ArrayList<reviewSelectDTO>();
+                		
+                		reviewList = dbdao.getReviews();
+                		for (int i=0 ; i < reviewList.size(); i++) {
+                			reviewHTML += "<div class=\"community-list-item\">";
+                			 reviewHTML += "<div class=\"CommunityListItem__StyledListItemContent\">";
+                			  //영수증
+               			 	  reviewHTML += "<div class=\"CommunityListItem__bill\">";
+               			 	  reviewHTML += "영수증후기";
+               			 	  reviewHTML += "</div>";
+                		      // 아이디, 포인트
+                		      reviewHTML += "<div class=\"CommunityListItem__id\">";
+               			 	  reviewHTML += reviewList.get(i).getID();
+               			 	  reviewHTML += "</div>";
+               			 	  reviewHTML += "<div class=\"CommunityListItem__point\">";
+             			 	  reviewHTML += "(포인트)";
+             			 	  reviewHTML += "</div>";
+             			 	  // 리뷰등록일자
+             			 	  reviewHTML += "<div class=\"CommunityListItem__point\">";
+             			 	  reviewHTML += reviewList.get(i).getRegisterDate();
+             			 	  reviewHTML += "</div>";
+                			  // 리뷰내용
+             			 	  reviewHTML += "<div class=\"CommunityListItem__content\">";
+             			 	  reviewHTML += "<span class=\"CommunityListItem__content__span\">";
+             			 	  reviewHTML += reviewList.get(i).getReviewContent();
+             			 	  // 더보기
+             			 	  reviewHTML += "<span class=\"CommunityListItem__showMoreText\">";
+             			 	  reviewHTML += "..더 보기";
+             			 	  reviewHTML += "</span>";
+             			 	  reviewHTML += "</span></div>";
+             			 	  
+                			 reviewHTML += "</div>";
+                			 reviewHTML += "<section class=\"CommunityListItem__StyledCommunityActionBar\">";
+                			  // 좋아요 버튼
+                			  reviewHTML += "<button class=\"like-button\">"; reviewHTML+="<img src=\"img/like-icon.svg\">"; reviewHTML+="<div>좋아요</div>"; reviewHTML+="<div>";
+                			  reviewHTML += reviewList.get(i).getReviewLike();
+                			  reviewHTML +="</div>"; reviewHTML += "</button>";
+                			  // 댓글 버튼
+                			  reviewHTML += "<button class=\"like-button\">"; reviewHTML+="<img src=\"img/like-icon.svg\">"; reviewHTML+="<div>좋아요</div>"; reviewHTML+="<div>";
+                			  reviewHTML += "(댓글수)";
+                			  reviewHTML +="</div>"; reviewHTML += "</button>";
+                			  // 조회수 버튼
+                			  reviewHTML += "<button class=\"like-button\">"; reviewHTML+="<img src=\"img/like-icon.svg\">"; reviewHTML+="<div>좋아요</div>"; reviewHTML+="<div>";
+                			  reviewHTML += reviewList.get(i).getReviewViews();
+                			  reviewHTML +="</div>"; reviewHTML += "</button>";
+                			  
+                			 reviewHTML += "</section>";
+                			reviewHTML += "</div>";
+                		}
+                		
+                		out.print(reviewHTML);
+            
+                		
+                	
+                	%>
+                	
+                	
+                	</div>
+                
+                	
+                
                 
                 </div>
                 

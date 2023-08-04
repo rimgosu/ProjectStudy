@@ -7,7 +7,7 @@
 <title>JSP 파일 업로드</title>
 </head>
 <body>
-	<form action="_01uploadAction.jsp" method="post" enctype="multipart/form-data">
+	<form action="uploadAction" method="post" enctype="multipart/form-data">
 	
 		파일 : <input type="file" name="file1"> <br>
 		파일 : <input type="file" name="file2"> <br>
