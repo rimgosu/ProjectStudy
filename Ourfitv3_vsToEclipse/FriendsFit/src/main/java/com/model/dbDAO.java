@@ -196,4 +196,28 @@ public class dbDAO {
 	}
 	
 	
+	public ArrayList<reviewComment_memberDTO> getReviewComment(int reviewNum) {
+		ArrayList<reviewComment_memberDTO> list = new ArrayList<reviewComment_memberDTO>();
+		getConnection();
+		try {	
+			String sql = "select a.아이디, 포인트, a.등록일자, 댓글내용, 좋아요 from tb_review_comment a, tb_member b where a.아이디 = b.아이디 and 리뷰번호=?";
+			psmt = conn.prepareStatement(sql);
+			psmt.setInt(1, reviewNum); 
+			ResultSet rs = psmt.executeQuery();
+			while (rs.next()) {
+				reviewComment_memberDTO reviews = new reviewComment_memberDTO(
+						rs.getString(1), rs.getInt(2), rs.getString(3), rs.getString(4), rs.getInt(5));
+				list.add(reviews);
+			}
+			return list;
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			close();
+		}
+		return null;	
+	}
+	
+	
 }

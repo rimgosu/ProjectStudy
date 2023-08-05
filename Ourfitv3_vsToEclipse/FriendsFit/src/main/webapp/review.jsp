@@ -40,6 +40,8 @@
                    
                    
                    <%
+                      request.setCharacterEncoding("UTF-8");
+                   	  
                    
                       String reviewHTML = "";
                    

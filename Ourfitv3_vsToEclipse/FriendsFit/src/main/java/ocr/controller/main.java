@@ -7,7 +7,7 @@ import ocr.model.ocrDAO;
 public class main {
 	
 	public static void main(String[] args) {
-		KeyDAO keyDAO = new KeyDAO("C://keys.json");
+		KeyDAO keyDAO = new KeyDAO("C://keys/keys.json");
 		// TODO Auto-generated method stub
 		String API_KEY = keyDAO.getKeyValue("gptPrivateKey");
 		String invokeUrl = keyDAO.getKeyValue("clovaOCRInvokeURL"); 
@@ -15,7 +15,7 @@ public class main {
         
         
         String format = "png";
-        String url = "C:/test2.jpg";
+        String url = "https://blog.kakaocdn.net/dn/by79KZ/btqFHbaHAWd/ymCPJQOETF4WyFEocKpIfK/img.jpg";
 		ocrDAO ocrdao = new ocrDAO(invokeUrl, secretKey, format, url);
 		
 		String prompt; 

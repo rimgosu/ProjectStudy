@@ -1,3 +1,4 @@
+<%@page import="com.model.reviewComment_memberDTO"%>
 <%@page import="java.util.ArrayList"%>
 <%@page import="com.model.reviewSelectDTO"%>
 <%@page import="com.model.dbDAO"%>
@@ -40,9 +41,16 @@
 
 
 				<%
-					  int reviewNum = Integer.parseInt(request.getParameter("reviewNum"));
+				request.setCharacterEncoding("UTF-8");
+				response.setCharacterEncoding("UTF-8");
+					  String reviewNum = request.getParameter("reviewNum");
+					  int intReviewNum = Integer.parseInt(reviewNum);
+					  System.out.println(reviewNum);
+					  System.out.println(intReviewNum);
+					  
+					  
 					  dbDAO dbdao = new dbDAO();
-					  reviewSelectDTO review = dbdao.getReview(reviewNum);
+					  reviewSelectDTO review = dbdao.getReview(intReviewNum);
 					  request.setAttribute("review", review);
 				%>
 
@@ -52,14 +60,7 @@
 								<div class="CommunityListItem__id">${review.ID}</div>
 								<div class="CommunityListItem__point">(포인트)</div>
 								<div class="CommunityListItem__registerDate">${review.registerDate}</div>
-								<div class="CommunityListItem__content">
-									<span class="CommunityListItem__content__span">
-										${review.reviewContent} <span
-										class="CommunityListItem__showMoreText"> <a
-											href="reviewSee.jsp?reviewNum=${review.reviewNum}">..더 보기</a>
-									</span>
-									</span>
-								</div>
+								<div class="CommunityListItem__content"></div>
 							</div>
 							<section class="CommunityListItem__StyledCommunityActionBar">
 								<button class="like-button">
@@ -82,10 +83,12 @@
 
 
 					</div>
-					<% System.out.println(reviewNum + "jsp에서의 reviewNum"); %>
 
-					<form action="reviewCommentAction?reviewNum=<%= Integer.toString(reviewNum) %>">
-						<div type="comment" class="review-comment-textarea">
+					<!-- 리뷰쓰기 -->
+					<form action="reviewCommentAction" method="post">
+						<%= reviewNum %>
+						<div class="review-comment-textarea">
+							<input name="rNum" value="<%= reviewNum %>" style="display: none;">
 							<textarea name="reviewComment" maxlength="440"
 								data-testid="comment-textarea" placeholder="댓글을 입력해주세요."
 								class="CommunityDetailTemplate__StyledCommentTextarea-sc-alice7-27"
@@ -100,6 +103,39 @@
 						</div>
 					</form>
 
+
+
+
+
+
+					<!-- 리뷰 보기 -->
+					<% ArrayList<reviewComment_memberDTO> rcmdto = dbdao.getReviewComment(intReviewNum);
+						for(int i=0; i<rcmdto.size(); i++) { %>
+					
+					<div class="review-wrapper">
+						<div class="comment-list-item">
+							<div class="comment-list-item-content">
+								<div class="comment-user-profile">
+									<div class="comment-user"></div>
+									<div class="user-tag"><%= rcmdto.get(i).getId() %></div>
+									<div class="create-time-wrapper"> <%= rcmdto.get(i).getPoint() %></div>
+								</div>
+								<div class="comment-contents"> <%= rcmdto.get(i).getContent() %> </div>
+								<div class="comment-action-area">
+									<div class="community-detail">
+										<button class="comment-like-button">
+											<img data-testid="thumbs-up-off-icon"
+												src="/imag/black-thumb-up-icon.svg"
+												alt="thumb up off icon">
+											<div> <%= rcmdto.get(i).getRegisterDate() %> </div>
+										</button>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<% } %>
 
 
 

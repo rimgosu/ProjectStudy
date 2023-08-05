@@ -23,10 +23,11 @@ public class reviewCommentAction extends HttpServlet {
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		String commentContent = request.getParameter("reviewComment");
-		String reviewNum = request.getParameter("reviewNum");
-		System.out.println(reviewNum);
+		String reviewNum = request.getParameter("rNum");
+		int reviewNumInt = Integer.parseInt(reviewNum);
+		System.out.println(reviewNum + " reviewNum in reviewCommentAction Servlet");
 		
-		commentDTO commentdto = new commentDTO(0, commentContent, "TEST1", 1, "REGISTER_DATE", 0);
+		commentDTO commentdto = new commentDTO(0, commentContent, "TEST1", reviewNumInt, "REGISTER_DATE", 0);
 		
 		dbDAO dbdao = new dbDAO();
 		dbdao.commentUpload(commentdto);
