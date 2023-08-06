@@ -216,12 +216,12 @@ public class dbDAO {
 		ArrayList<String> list = new ArrayList<String>();
 		getConnection();
 		try {
-			String sql = "select 시설이름 from tb_facility where 시설이름 like ?";
+			String sql = "select 시설번호,시설이름 from tb_facility where 시설이름 like ?";
 			psmt = conn.prepareStatement(sql);
 			psmt.setString(1, "%"+query+"%");
 			ResultSet rs = psmt.executeQuery();
 			while (rs.next()) {
-				list.add(rs.getString(1));
+				list.add(Integer.toString(rs.getInt(1))+ " "  +rs.getString(2));
 			}
 			return list;
 		} catch (SQLException e) {
@@ -232,5 +232,47 @@ public class dbDAO {
 		}
 		return null;
 	}
+	
 
+	public facilityClickDTO getFacility(double x, double y) {
+		
+		facilityClickDTO fcdto = new facilityClickDTO();
+		getConnection();
+		try {
+			String sql = "select a.파일번호,\r\n"
+					+ "       a.시설번호,\r\n"
+					+ "       a.시설이름,\r\n"
+					+ "       a.구분,\r\n"
+					+ "       a.영업시간,\r\n"
+					+ "       a.전화번호,\r\n"
+					+ "       a.주소,\r\n"
+					+ "       a.등록일자 \r\n"
+					+ "from tb_facility a, tb_review b \r\n"
+					+ "where a.시설번호=b.시설번호\r\n"
+					+ "  and ABS(a.x좌표-?)<0.0001\r\n"
+					+ "  and ABS(a.y좌표-?)<0.0001";
+			psmt = conn.prepareStatement(sql);
+			psmt.setDouble(1, x);
+			psmt.setDouble(2, y);
+			ResultSet rs = psmt.executeQuery();
+			while (rs.next()) {
+				fcdto.setFileNum(rs.getInt(1));
+				fcdto.setFacilityNum(rs.getInt(2));
+				fcdto.setName(rs.getString(3));
+				fcdto.setType(rs.getString(4));
+				fcdto.setTime(rs.getString(5));
+				fcdto.setTel(rs.getString(6));
+				fcdto.setAddress(rs.getString(7));
+				fcdto.setRegisterDate(rs.getString(8));
+			}
+			return fcdto;
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			close();
+		}
+		return null;
+	}
 }
+

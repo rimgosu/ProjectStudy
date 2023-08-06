@@ -29,6 +29,7 @@ public class SearchServlet extends HttpServlet {
 
         // 예제 코드:
         String result = ""; // 이 부분에 DB 검색 결과를 추가
+        response.setContentType("text/html; charset=UTF-8");
         response.getWriter().write(lst.toString());
     }
 }

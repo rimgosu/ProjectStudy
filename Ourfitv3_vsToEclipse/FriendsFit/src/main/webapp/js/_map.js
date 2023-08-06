@@ -59,7 +59,6 @@ for (var i = 0; i < positions.length; i++) {
 	// 지도 클릭 이벤트를 등록한다 (좌클릭 : click, 우클릭 : rightclick, 더블클릭 : dblclick)
 	// 마커에 클릭 이벤트를 등록한다 (우클릭 : rightclick)
 	kakao.maps.event.addListener(marker, 'click', function() {
-		document.getElementById('aside').style.display = 'block';
 		
 	});
 
@@ -88,7 +87,7 @@ function attachClickEvent(marker) {
 
 kakao.maps.event.addListener(marker, 'click', function() {
 	// mapv2 area
-	document.getElementById('aside').style.display = 'block';
+	
 });
 
 function sendDataToServlet(data) {

@@ -1,3 +1,5 @@
+<%@page import="com.model.dbDAO"%>
+<%@page import="com.model.facilityClickDTO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -68,7 +70,42 @@
 
 
 		</div>
-		<div id="aside">안녕하세요, 이 곳에 정보가 뜰 것입니다</div>
+		<%
+		String x = request.getParameter("x");
+		String y = request.getParameter("y");
+
+		if (x != null) {
+			facilityClickDTO fcdto = new facilityClickDTO();
+			dbDAO dbdao = new dbDAO();
+			fcdto = dbdao.getFacility(Double.parseDouble(x), Double.parseDouble(y));
+		%>
+
+		<div id="aside" style="display: block;">
+			<div class="fileNum"><%=fcdto.getFileNum()%></div>
+			<div class="facilityNum"><%=fcdto.getFacilityNum()%></div>
+			<div class="name"><%=fcdto.getName()%></div>
+			<div class="type"><%=fcdto.getType()%></div>
+			<div class="time"><%=fcdto.getTime()%></div>
+			<div class="tel"><%=fcdto.getTel()%></div>
+			<div class="address"><%=fcdto.getAddress()%></div>
+			<div class="registerDate"><%=fcdto.getRegisterDate()%></div>
+			<div class="mainFacility dp-none"></div>
+			<div class="price dp-none"></div>
+			<div class="payType dp-none"></div>
+			<div class="convinienceFacility dp-none"></div>
+			<div class="homePage dp-none"></div>
+			<div class="tag dp-none"></div>
+			<div class="content dp-none"></div>
+			<div class="yearOfInstall dp-none"></div>
+			<div class="area dp-none"></div>
+			<div class="x-coord dp-none"></div>
+			<div class="y-coord dp-none"></div>
+			<div class="reviewNum dp-none"></div>
+		</div>
+		<%
+		}
+		%>
+
 	</div>
 
 	<script

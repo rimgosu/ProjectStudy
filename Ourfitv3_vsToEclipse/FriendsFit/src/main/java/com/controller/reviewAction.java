@@ -34,12 +34,13 @@ public class reviewAction extends HttpServlet {
 		int maxSize = 1024 * 1024 * 100;
 		String encoding = "UTF-8";
 	
-		
 		MultipartRequest multipartRequest
 		= new MultipartRequest(request, directory, maxSize, encoding, new DefaultFileRenamePolicy());
 		String reviewTitle= multipartRequest.getParameter("reviewTitle");
 		String reviewContent = multipartRequest.getParameter("reviewContent");
 		String reviewGrade = multipartRequest.getParameter("reviewGrade");
+		String facilityNum = multipartRequest.getParameter("facilityNum");
+		int facilityNumInt = Integer.parseInt(facilityNum);
 		
 		int reviewGradeInt = 0; // default value
 		if (reviewGrade != null && !reviewGrade.isEmpty()) {
@@ -50,7 +51,7 @@ public class reviewAction extends HttpServlet {
 		System.out.println(reviewContent);
 		System.out.println(reviewGrade);
 		
-		reviewDTO reviewdto = new reviewDTO(reviewTitle, reviewContent, reviewGradeInt, "TEST1", 1, 1); 
+		reviewDTO reviewdto = new reviewDTO(reviewTitle, reviewContent, reviewGradeInt, "TEST1", 1, facilityNumInt); 
 		
 		
 		
