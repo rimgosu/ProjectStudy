@@ -1,9 +1,15 @@
-<mxfile host="app.diagrams.net" modified="2023-08-08T07:53:28.530Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="22oqsTvW7LvsSp6W3kVk" version="21.6.6" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-08T07:54:51.379Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="27URGzgIhdHCCHkrGdwi" version="21.6.6" type="github">
   <diagram id="prtHgNgQTEPvFCAcTncT" name="Page-1">
-    <mxGraphModel dx="2395" dy="1837" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2993" dy="2155" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="ZUS3yhYuRDWJd393ZeMR-37" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="ZUS3yhYuRDWJd393ZeMR-35" target="ZUS3yhYuRDWJd393ZeMR-14">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="413" y="-320" as="sourcePoint" />
+            <mxPoint x="777" y="-267" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="ZUS3yhYuRDWJd393ZeMR-9" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="ZUS3yhYuRDWJd393ZeMR-8" source="ZUS3yhYuRDWJd393ZeMR-3">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="-441" y="150" as="sourcePoint" />
@@ -799,13 +805,13 @@
           <mxGeometry x="933" y="163.5" width="117" height="117" as="geometry" />
         </mxCell>
         <mxCell id="ZUS3yhYuRDWJd393ZeMR-15" value="컬럼번호&lt;br&gt;COLUMN_NUM" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1050" y="-289" width="120" height="80" as="geometry" />
+          <mxGeometry x="1148" y="-81" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="ZUS3yhYuRDWJd393ZeMR-17" value="컬럼제목&lt;br&gt;COLUMN_TITLE" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1146" y="-254" width="120" height="80" as="geometry" />
+          <mxGeometry x="1233" y="-47" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="ZUS3yhYuRDWJd393ZeMR-18" value="컬럼내용&lt;br&gt;COLUMN_CONTENT&lt;br&gt;VARCHAR2(3900)" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1219" y="-191" width="120" height="80" as="geometry" />
+          <mxGeometry x="1303" y="-4" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="ZUS3yhYuRDWJd393ZeMR-20" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="ZUS3yhYuRDWJd393ZeMR-14" target="ZUS3yhYuRDWJd393ZeMR-15">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -826,7 +832,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="ZUS3yhYuRDWJd393ZeMR-25" value="파일번호&lt;br&gt;FILE_NUM" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1382" y="-49" width="120" height="80" as="geometry" />
+          <mxGeometry x="1326" y="250" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="ZUS3yhYuRDWJd393ZeMR-26" value="" style="endArrow=none;html=1;rounded=0;entryX=0.021;entryY=0.592;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="ZUS3yhYuRDWJd393ZeMR-14" target="ZUS3yhYuRDWJd393ZeMR-25">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -835,12 +841,21 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="ZUS3yhYuRDWJd393ZeMR-29" value="등록일자&lt;br&gt;REVIEW_DAY" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1428" y="26" width="120" height="80" as="geometry" />
+          <mxGeometry x="1137" y="441" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="ZUS3yhYuRDWJd393ZeMR-30" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="ZUS3yhYuRDWJd393ZeMR-14" target="ZUS3yhYuRDWJd393ZeMR-29">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="1001" y="215.5" as="sourcePoint" />
             <mxPoint x="1146" y="157.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZUS3yhYuRDWJd393ZeMR-35" value="리뷰 글에&lt;br&gt;이미지추가" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="456" y="-298" width="90" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ZUS3yhYuRDWJd393ZeMR-36" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" target="ZUS3yhYuRDWJd393ZeMR-35" source="s3L-ne_ulO0HwT5f8NQK-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="430" y="-308" as="sourcePoint" />
+            <mxPoint x="524" y="-422" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
