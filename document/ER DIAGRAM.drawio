@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-08-09T02:49:01.816Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="nkyLWYJdu9PHGBIkFGRW" version="21.6.7" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-09T07:23:20.494Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="srlYBsmbwXqk0mKV1rvn" version="21.6.7" type="github">
   <diagram id="prtHgNgQTEPvFCAcTncT" name="Page-1">
-    <mxGraphModel dx="2634" dy="1964" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1883" dy="1564" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -486,11 +486,11 @@
         <mxCell id="s3L-ne_ulO0HwT5f8NQK-3" value="파일이름&lt;br&gt;FILE_NAME" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="10" y="-789" width="94.5" height="63" as="geometry" />
         </mxCell>
-        <mxCell id="s3L-ne_ulO0HwT5f8NQK-4" value="파일실제이름&lt;br&gt;FILE_RE_NAME" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="s3L-ne_ulO0HwT5f8NQK-4" value="파일실제이름&lt;br&gt;FILE_REAL_NAME" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="104.5" y="-798" width="132.5" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="s3L-ne_ulO0HwT5f8NQK-5" value="다운로드횟수&lt;br&gt;FILE_DOWN" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="172" y="-756" width="88.5" height="59" as="geometry" />
+        <mxCell id="s3L-ne_ulO0HwT5f8NQK-5" value="다운로드횟수&lt;br&gt;FILE_DOWNLOAD" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="221" y="-775" width="126" height="59" as="geometry" />
         </mxCell>
         <mxCell id="s3L-ne_ulO0HwT5f8NQK-6" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="s3L-ne_ulO0HwT5f8NQK-1" target="s3L-ne_ulO0HwT5f8NQK-2" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -867,10 +867,10 @@
         <mxCell id="f1mugdyLedBuoPwGYHdS-2" value="이미지주소&lt;br&gt;facility_image_src" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-673" y="351" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="H-PtB076ZN0Tm5rESKla-1" value="컬럼 작성자&lt;br&gt;COLUMN_WRITER" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="H-PtB076ZN0Tm5rESKla-1" value="컬럼 작성자&lt;br&gt;COLUMN_WRITER" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1028" y="507" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="H-PtB076ZN0Tm5rESKla-2" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" target="H-PtB076ZN0Tm5rESKla-1" source="ZUS3yhYuRDWJd393ZeMR-14">
+        <mxCell id="H-PtB076ZN0Tm5rESKla-2" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="ZUS3yhYuRDWJd393ZeMR-14" target="H-PtB076ZN0Tm5rESKla-1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="1001" y="416" as="sourcePoint" />
             <mxPoint x="1064.5" y="236.25" as="targetPoint" />
